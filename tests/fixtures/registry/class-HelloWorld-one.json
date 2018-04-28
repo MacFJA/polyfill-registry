@@ -1,0 +1,7 @@
+[
+  {
+    "type": "polyfill",
+    "name": "test3",
+    "classes": ["Hello\\World"]
+  }
+]

@@ -1,0 +1,1035 @@
+[
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill-apcu",
+    "require": {
+      "php": "5.3",
+      "ext-apc": "*"
+    },
+    "replace": {
+      "ext-apcu": "*"
+    },
+    "functions": [
+      "apcu_add",
+      "apcu_delete",
+      "apcu_exists",
+      "apcu_fetch",
+      "apcu_store",
+      "apcu_cache_info",
+      "apcu_cas",
+      "apcu_clear_cache",
+      "apcu_dec",
+      "apcu_inc",
+      "apcu_sma_info"
+    ],
+    "classes": [
+      "APCUIterator"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill-php54",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "php": "5.4.*"
+    },
+    "functions": [
+      "trait_exists",
+      "class_uses",
+      "hex2bin",
+      "session_register_shutdown"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill-php55",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "php": "5.5.*"
+    },
+    "constants": [
+      "PASSWORD_BCRYPT",
+      "PASSWORD_DEFAULT",
+      "PASSWORD_BCRYPT_DEFAULT_COST"
+    ],
+    "functions": [
+      "boolval",
+      "json_last_error_msg",
+      "array_column",
+      "hash_pbkdf2",
+      "password_hash",
+      "password_get_info",
+      "password_needs_rehash",
+      "password_verify"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill-php56",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "php": "5.6.*"
+    },
+    "functions": [
+      "hash_equals",
+      "ldap_escape",
+      "gzopen",
+      "gzseek",
+      "gztell"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill-php70",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "php": "7.0.*"
+    },
+    "functions": [
+      "intdiv",
+      "preg_replace_callback_array",
+      "error_clear_last",
+      "random_bytes",
+      "random_int"
+    ],
+    "constants": [
+      "PHP_INT_MIN"
+    ],
+    "classes": [
+      "SessionUpdateTimestampHandlerInterface",
+      "ArithmeticError",
+      "AssertionError",
+      "DivisionByZeroError",
+      "Error",
+      "ParseError",
+      "TypeError"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill-php71",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "php": "7.1.*"
+    },
+    "functions": [
+      "is_iterable"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill-php72",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "php": "7.2.*"
+    },
+    "functions": [
+      "spl_object_id",
+      "stream_isatty",
+      "sapi_windows_vt100_support",
+      "utf8_encode",
+      "utf8_decode"
+    ],
+    "constants": [
+      "PHP_OS_FAMILY"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill-iconv",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "ext-iconv": "*"
+    },
+    "functions": [
+      "iconv",
+      "iconv_get_encoding",
+      "iconv_set_encoding",
+      "iconv_mime_encode",
+      "iconv_mime_decode_headers",
+      "iconv_strlen",
+      "iconv_strpos",
+      "iconv_strrpos",
+      "iconv_substr",
+      "iconv_mime_decode"
+    ],
+    "constants": [
+      "ICONV_IMPL",
+      "ICONV_VERSION",
+      "ICONV_MIME_DECODE_STRICT",
+      "ICONV_MIME_DECODE_CONTINUE_ON_ERROR"
+    ],
+    "classes": []
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill-intl-grapheme",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "ext-intl": "*"
+    },
+    "functions": [
+      "grapheme_extract",
+      "grapheme_stripos",
+      "grapheme_stristr",
+      "grapheme_strlen",
+      "grapheme_strpos",
+      "grapheme_strripos",
+      "grapheme_strrpos",
+      "grapheme_strstr",
+      "grapheme_substr"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill-intl-icu",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "ext-intl": "*"
+    },
+    "functions": [
+      "intl_is_failure",
+      "intl_get_error_code",
+      "intl_get_error_message",
+      "intl_error_name"
+    ],
+    "classes": [
+      "Collator",
+      "NumberFormatter",
+      "Locale",
+      "IntlDateFormatter"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill-intl-normalizer",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "ext-intl": "*"
+    },
+    "classes": [
+      "Normalizer"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill-mbstring",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "ext-mbstring": "*"
+    },
+    "functions": [
+      "mb_convert_encoding",
+      "mb_decode_mimeheader",
+      "mb_encode_mimeheader",
+      "mb_decode_numericentity",
+      "mb_encode_numericentity",
+      "mb_convert_case",
+      "mb_internal_encoding",
+      "mb_language",
+      "mb_list_encodings",
+      "mb_encoding_aliases",
+      "mb_check_encoding",
+      "mb_detect_encoding",
+      "mb_detect_order",
+      "mb_parse_str",
+      "mb_strlen",
+      "mb_strpos",
+      "mb_strtolower",
+      "mb_strtoupper",
+      "mb_substitute_character",
+      "mb_substr",
+      "mb_stripos",
+      "mb_stristr",
+      "mb_strrchr",
+      "mb_strrichr",
+      "mb_strripos",
+      "mb_strrpos",
+      "mb_strstr",
+      "mb_get_info",
+      "mb_http_output",
+      "mb_strwidth",
+      "mb_substr_count",
+      "mb_output_handler",
+      "mb_http_input",
+      "mb_convert_variables",
+      "mb_ord",
+      "mb_chr",
+      "mb_scrub"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/polyfill",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "ext-mbstring": "*",
+      "ext-intl": "*",
+      "ext-iconv": "*",
+      "php": "5.* && 7.*",
+      "ext-apcu": "*"
+    },
+    "functions": [
+      "apcu_add",
+      "apcu_delete",
+      "apcu_exists",
+      "apcu_fetch",
+      "apcu_store",
+      "apcu_cache_info",
+      "apcu_cas",
+      "apcu_clear_cache",
+      "apcu_dec",
+      "apcu_inc",
+      "apcu_sma_info",
+      "trait_exists",
+      "class_uses",
+      "hex2bin",
+      "session_register_shutdown",
+      "boolval",
+      "json_last_error_msg",
+      "array_column",
+      "hash_pbkdf2",
+      "password_hash",
+      "password_get_info",
+      "password_needs_rehash",
+      "password_verify",
+      "hash_equals",
+      "ldap_escape",
+      "gzopen",
+      "gzseek",
+      "gztell",
+      "intdiv",
+      "preg_replace_callback_array",
+      "error_clear_last",
+      "random_bytes",
+      "random_int",
+      "is_iterable",
+      "spl_object_id",
+      "stream_isatty",
+      "sapi_windows_vt100_support",
+      "utf8_encode",
+      "utf8_decode",
+      "iconv",
+      "iconv_get_encoding",
+      "iconv_set_encoding",
+      "iconv_mime_encode",
+      "iconv_mime_decode_headers",
+      "iconv_strlen",
+      "iconv_strpos",
+      "iconv_strrpos",
+      "iconv_substr",
+      "iconv_mime_decode",
+      "grapheme_extract",
+      "grapheme_stripos",
+      "grapheme_stristr",
+      "grapheme_strlen",
+      "grapheme_strpos",
+      "grapheme_strripos",
+      "grapheme_strrpos",
+      "grapheme_strstr",
+      "grapheme_substr",
+      "intl_is_failure",
+      "intl_get_error_code",
+      "intl_get_error_message",
+      "intl_error_name",
+      "mb_convert_encoding",
+      "mb_decode_mimeheader",
+      "mb_encode_mimeheader",
+      "mb_decode_numericentity",
+      "mb_encode_numericentity",
+      "mb_convert_case",
+      "mb_internal_encoding",
+      "mb_language",
+      "mb_list_encodings",
+      "mb_encoding_aliases",
+      "mb_check_encoding",
+      "mb_detect_encoding",
+      "mb_detect_order",
+      "mb_parse_str",
+      "mb_strlen",
+      "mb_strpos",
+      "mb_strtolower",
+      "mb_strtoupper",
+      "mb_substitute_character",
+      "mb_substr",
+      "mb_stripos",
+      "mb_stristr",
+      "mb_strrchr",
+      "mb_strrichr",
+      "mb_strripos",
+      "mb_strrpos",
+      "mb_strstr",
+      "mb_get_info",
+      "mb_http_output",
+      "mb_strwidth",
+      "mb_substr_count",
+      "mb_output_handler",
+      "mb_http_input",
+      "mb_convert_variables",
+      "mb_ord",
+      "mb_chr",
+      "mb_scrub"
+    ],
+    "constants": [
+      "PASSWORD_BCRYPT",
+      "PASSWORD_DEFAULT",
+      "PASSWORD_BCRYPT_DEFAULT_COST",
+      "PHP_INT_MIN",
+      "PHP_OS_FAMILY",
+      "ICONV_IMPL",
+      "ICONV_VERSION",
+      "ICONV_MIME_DECODE_STRICT",
+      "ICONV_MIME_DECODE_CONTINUE_ON_ERROR"
+    ],
+    "classes": [
+      "APCUIterator",
+      "SessionUpdateTimestampHandlerInterface",
+      "ArithmeticError",
+      "AssertionError",
+      "DivisionByZeroError",
+      "Error",
+      "ParseError",
+      "TypeError",
+      "Collator",
+      "NumberFormatter",
+      "Locale",
+      "IntlDateFormatter",
+      "Normalizer"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "symfony/intl",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "ext-intl": "*"
+    },
+    "classes": [
+      "Locale",
+      "NumberFormatter",
+      "IntlDateFormatter",
+      "Collator"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "phpseclib/mcrypt_compat",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "ext-mcrypt": "*"
+    },
+    "functions": [
+      "mcrypt_list_algorithms",
+      "mcrypt_list_modes",
+      "mcrypt_create_iv",
+      "mcrypt_module_open",
+      "mcrypt_enc_get_key_size",
+      "mcrypt_enc_get_iv_size",
+      "mcrypt_enc_get_block_size",
+      "mcrypt_generic_init",
+      "mcrypt_generic",
+      "mcrypt_generic_deinit",
+      "mcrypt_module_close",
+      "mdecrypt_generic",
+      "mcrypt_enc_get_algorithms_name",
+      "mcrypt_enc_get_modes_name",
+      "mcrypt_enc_is_block_algorithm_mode",
+      "mcrypt_enc_is_block_algorithm",
+      "mcrypt_enc_self_test",
+      "mcrypt_module_get_supported_key_sizes",
+      "mcrypt_encrypt",
+      "mcrypt_module_get_algo_block_size",
+      "mcrypt_get_block_size",
+      "mcrypt_get_cipher_name",
+      "mcrypt_get_key_size",
+      "mcrypt_get_iv_size",
+      "mcrypt_module_get_algo_key_size",
+      "mcrypt_enc_get_supported_key_sizes",
+      "mcrypt_module_is_block_algorithm_mode",
+      "mcrypt_module_is_block_algorithm",
+      "mcrypt_module_is_block_mode",
+      "mcrypt_module_self_test",
+      "mcrypt_decrypt"
+    ],
+    "constants": [
+      "MCRYPT_MODE_ECB",
+      "MCRYPT_MODE_CBC",
+      "MCRYPT_MODE_CFB",
+      "MCRYPT_MODE_OFB",
+      "MCRYPT_MODE_NOFB",
+      "MCRYPT_MODE_STREAM",
+      "MCRYPT_ENCRYPT",
+      "MCRYPT_DECRYPT",
+      "MCRYPT_DEV_RANDOM",
+      "MCRYPT_DEV_URANDOM",
+      "MCRYPT_RAND",
+      "MCRYPT_3DES",
+      "MCRYPT_ARCFOUR_IV",
+      "MCRYPT_ARCFOUR",
+      "MCRYPT_BLOWFISH",
+      "MCRYPT_CAST_128",
+      "MCRYPT_CAST_256",
+      "MCRYPT_CRYPT",
+      "MCRYPT_DES",
+      "MCRYPT_GOST",
+      "MCRYPT_IDEA",
+      "MCRYPT_LOKI97",
+      "MCRYPT_MARS",
+      "MCRYPT_PANAMA",
+      "MCRYPT_RIJNDAEL_128",
+      "MCRYPT_RIJNDAEL_192",
+      "MCRYPT_RIJNDAEL_256",
+      "MCRYPT_RC2",
+      "MCRYPT_RC6",
+      "MCRYPT_SAFER64",
+      "MCRYPT_SAFER128",
+      "MCRYPT_SAFERPLUS",
+      "MCRYPT_SERPENT",
+      "MCRYPT_SKIPJACK",
+      "MCRYPT_THREEWAY",
+      "MCRYPT_TRIPLEDES",
+      "MCRYPT_TWOFISH",
+      "MCRYPT_WAKE",
+      "MCRYPT_XTEA"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "ralouphie/getallheaders",
+    "require": {
+      "php": "5.3"
+    },
+    "functions": [
+      "getallheaders"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "paragonie/random_compat",
+    "require": {
+      "php": "5.2"
+    },
+    "constants": [
+      "PHP_VERSION_ID",
+      "RANDOM_COMPAT_READ_BUFFER"
+    ],
+    "functions": [
+      "random_bytes",
+      "random_int"
+    ],
+    "classes": [
+      "Error",
+      "TypeError"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "paragonie/sodium_compat",
+    "require": {},
+    "replace": {"ext-sodium": "*", "ext-libsodium": "*"},
+    "constants": [
+      "Sodium::CRYPTO_AEAD_AES256GCM_KEYBYTES",
+      "Sodium::CRYPTO_AEAD_AES256GCM_NSECBYTES",
+      "Sodium::CRYPTO_AEAD_AES256GCM_NPUBBYTES",
+      "Sodium::CRYPTO_AEAD_AES256GCM_ABYTES",
+      "Sodium::CRYPTO_AEAD_CHACHA20POLY1305_KEYBYTES",
+      "Sodium::CRYPTO_AEAD_CHACHA20POLY1305_NSECBYTES",
+      "Sodium::CRYPTO_AEAD_CHACHA20POLY1305_NPUBBYTES",
+      "Sodium::CRYPTO_AEAD_CHACHA20POLY1305_ABYTES",
+      "Sodium::CRYPTO_AEAD_CHACHA20POLY1305_IETF_KEYBYTES",
+      "Sodium::CRYPTO_AEAD_CHACHA20POLY1305_IETF_NSECBYTES",
+      "Sodium::CRYPTO_AEAD_CHACHA20POLY1305_IETF_NPUBBYTES",
+      "Sodium::CRYPTO_AEAD_CHACHA20POLY1305_IETF_ABYTES",
+      "Sodium::CRYPTO_AUTH_BYTES",
+      "Sodium::CRYPTO_AUTH_KEYBYTES",
+      "Sodium::CRYPTO_BOX_SEALBYTES",
+      "Sodium::CRYPTO_BOX_SECRETKEYBYTES",
+      "Sodium::CRYPTO_BOX_PUBLICKEYBYTES",
+      "Sodium::CRYPTO_BOX_KEYPAIRBYTES",
+      "Sodium::CRYPTO_BOX_MACBYTES",
+      "Sodium::CRYPTO_BOX_NONCEBYTES",
+      "Sodium::CRYPTO_BOX_SEEDBYTES",
+      "Sodium::CRYPTO_KX_BYTES",
+      "Sodium::CRYPTO_KX_SEEDBYTES",
+      "Sodium::CRYPTO_KX_PUBLICKEYBYTES",
+      "Sodium::CRYPTO_KX_SECRETKEYBYTES",
+      "Sodium::CRYPTO_GENERICHASH_BYTES",
+      "Sodium::CRYPTO_GENERICHASH_BYTES_MIN",
+      "Sodium::CRYPTO_GENERICHASH_BYTES_MAX",
+      "Sodium::CRYPTO_GENERICHASH_KEYBYTES",
+      "Sodium::CRYPTO_GENERICHASH_KEYBYTES_MIN",
+      "Sodium::CRYPTO_GENERICHASH_KEYBYTES_MAX",
+      "Sodium::CRYPTO_SCALARMULT_BYTES",
+      "Sodium::CRYPTO_SCALARMULT_SCALARBYTES",
+      "Sodium::CRYPTO_SHORTHASH_BYTES",
+      "Sodium::CRYPTO_SHORTHASH_KEYBYTES",
+      "Sodium::CRYPTO_SECRETBOX_KEYBYTES",
+      "Sodium::CRYPTO_SECRETBOX_MACBYTES",
+      "Sodium::CRYPTO_SECRETBOX_NONCEBYTES",
+      "Sodium::CRYPTO_SIGN_BYTES",
+      "Sodium::CRYPTO_SIGN_SEEDBYTES",
+      "Sodium::CRYPTO_SIGN_PUBLICKEYBYTES",
+      "Sodium::CRYPTO_SIGN_SECRETKEYBYTES",
+      "Sodium::CRYPTO_SIGN_KEYPAIRBYTES",
+      "Sodium::CRYPTO_STREAM_KEYBYTES",
+      "Sodium::CRYPTO_STREAM_NONCEBYTES",
+      "SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_KEYBYTES",
+      "SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_NSECBYTES",
+      "SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_NPUBBYTES",
+      "SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_ABYTES",
+      "SODIUM_CRYPTO_AEAD_AES256GCM_KEYBYTES",
+      "SODIUM_CRYPTO_AEAD_AES256GCM_NSECBYTES",
+      "SODIUM_CRYPTO_AEAD_AES256GCM_NPUBBYTES",
+      "SODIUM_CRYPTO_AEAD_AES256GCM_ABYTES",
+      "SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_IETF_KEYBYTES",
+      "SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_IETF_NSECBYTES",
+      "SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_IETF_NPUBBYTES",
+      "SODIUM_CRYPTO_AEAD_CHACHA20POLY1305_IETF_ABYTES",
+      "SODIUM_CRYPTO_AUTH_BYTES",
+      "SODIUM_CRYPTO_AUTH_KEYBYTES",
+      "SODIUM_CRYPTO_BOX_SEALBYTES",
+      "SODIUM_CRYPTO_BOX_SECRETKEYBYTES",
+      "SODIUM_CRYPTO_BOX_PUBLICKEYBYTES",
+      "SODIUM_CRYPTO_BOX_KEYPAIRBYTES",
+      "SODIUM_CRYPTO_BOX_MACBYTES",
+      "SODIUM_CRYPTO_BOX_NONCEBYTES",
+      "SODIUM_CRYPTO_BOX_SEEDBYTES",
+      "SODIUM_CRYPTO_KX_BYTES",
+      "SODIUM_CRYPTO_KX_SEEDBYTES",
+      "SODIUM_CRYPTO_KX_PUBLICKEYBYTES",
+      "SODIUM_CRYPTO_KX_SECRETKEYBYTES",
+      "SODIUM_CRYPTO_GENERICHASH_BYTES",
+      "SODIUM_CRYPTO_GENERICHASH_BYTES_MIN",
+      "SODIUM_CRYPTO_GENERICHASH_BYTES_MAX",
+      "SODIUM_CRYPTO_GENERICHASH_KEYBYTES",
+      "SODIUM_CRYPTO_GENERICHASH_KEYBYTES_MIN",
+      "SODIUM_CRYPTO_GENERICHASH_KEYBYTES_MAX",
+      "SODIUM_CRYPTO_PWHASH_SALTBYTES",
+      "SODIUM_CRYPTO_PWHASH_STRPREFIX",
+      "SODIUM_CRYPTO_PWHASH_ALG_ARGON2I13",
+      "SODIUM_CRYPTO_PWHASH_ALG_ARGON2ID13",
+      "SODIUM_CRYPTO_PWHASH_MEMLIMIT_INTERACTIVE",
+      "SODIUM_CRYPTO_PWHASH_OPSLIMIT_INTERACTIVE",
+      "SODIUM_CRYPTO_PWHASH_MEMLIMIT_MODERATE",
+      "SODIUM_CRYPTO_PWHASH_OPSLIMIT_MODERATE",
+      "SODIUM_CRYPTO_PWHASH_MEMLIMIT_SENSITIVE",
+      "SODIUM_CRYPTO_PWHASH_OPSLIMIT_SENSITIVE",
+      "SODIUM_CRYPTO_SCALARMULT_BYTES",
+      "SODIUM_CRYPTO_SCALARMULT_SCALARBYTES",
+      "SODIUM_CRYPTO_SHORTHASH_BYTES",
+      "SODIUM_CRYPTO_SHORTHASH_KEYBYTES",
+      "SODIUM_CRYPTO_SECRETBOX_KEYBYTES",
+      "SODIUM_CRYPTO_SECRETBOX_MACBYTES",
+      "SODIUM_CRYPTO_SECRETBOX_NONCEBYTES",
+      "SODIUM_CRYPTO_SIGN_BYTES",
+      "SODIUM_CRYPTO_SIGN_SEEDBYTES",
+      "SODIUM_CRYPTO_SIGN_PUBLICKEYBYTES",
+      "SODIUM_CRYPTO_SIGN_SECRETKEYBYTES",
+      "SODIUM_CRYPTO_SIGN_KEYPAIRBYTES",
+      "SODIUM_CRYPTO_STREAM_KEYBYTES",
+      "SODIUM_CRYPTO_STREAM_NONCEBYTES"
+    ],
+    "functions": [
+      "sodium_bin2hex",
+      "sodium_compare",
+      "sodium_crypto_aead_aes256gcm_decrypt",
+      "sodium_crypto_aead_aes256gcm_encrypt",
+      "sodium_crypto_aead_aes256gcm_is_available",
+      "sodium_crypto_aead_chacha20poly1305_decrypt",
+      "sodium_crypto_aead_chacha20poly1305_encrypt",
+      "sodium_crypto_aead_chacha20poly1305_keygen",
+      "sodium_crypto_aead_chacha20poly1305_ietf_decrypt",
+      "sodium_crypto_aead_chacha20poly1305_ietf_encrypt",
+      "sodium_crypto_aead_chacha20poly1305_ietf_keygen",
+      "sodium_crypto_aead_xchacha20poly1305_ietf_decrypt",
+      "sodium_crypto_aead_xchacha20poly1305_ietf_encrypt",
+      "sodium_crypto_aead_xchacha20poly1305_ietf_keygen",
+      "sodium_crypto_auth",
+      "sodium_crypto_auth_keygen",
+      "sodium_crypto_auth_verify",
+      "sodium_crypto_box",
+      "sodium_crypto_box_keypair",
+      "sodium_crypto_box_keypair_from_secretkey_and_publickey",
+      "sodium_crypto_box_open",
+      "sodium_crypto_box_publickey",
+      "sodium_crypto_box_publickey_from_secretkey",
+      "sodium_crypto_box_seal",
+      "sodium_crypto_box_seal_open",
+      "sodium_crypto_box_secretkey",
+      "sodium_crypto_box_seed_keypair",
+      "sodium_crypto_generichash",
+      "sodium_crypto_generichash_final",
+      "sodium_crypto_generichash_init",
+      "sodium_crypto_generichash_keygen",
+      "sodium_crypto_generichash_update",
+      "sodium_crypto_kx",
+      "sodium_crypto_pwhash",
+      "sodium_crypto_pwhash_str",
+      "sodium_crypto_pwhash_str_verify",
+      "sodium_crypto_pwhash_scryptsalsa208sha256",
+      "sodium_crypto_pwhash_scryptsalsa208sha256_str",
+      "sodium_crypto_pwhash_scryptsalsa208sha256_str_verify",
+      "sodium_crypto_scalarmult",
+      "sodium_crypto_scalarmult_base",
+      "sodium_crypto_secretbox",
+      "sodium_crypto_secretbox_keygen",
+      "sodium_crypto_secretbox_open",
+      "sodium_crypto_shorthash",
+      "sodium_crypto_shorthash_keygen",
+      "sodium_crypto_sign",
+      "sodium_crypto_sign_detached",
+      "sodium_crypto_sign_keypair",
+      "sodium_crypto_sign_open",
+      "sodium_crypto_sign_publickey",
+      "sodium_crypto_sign_publickey_from_secretkey",
+      "sodium_crypto_sign_secretkey",
+      "sodium_crypto_sign_seed_keypair",
+      "sodium_crypto_sign_verify_detached",
+      "sodium_crypto_sign_ed25519_pk_to_curve25519",
+      "sodium_crypto_sign_ed25519_sk_to_curve25519",
+      "sodium_crypto_stream",
+      "sodium_crypto_stream_keygen",
+      "sodium_crypto_stream_xor",
+      "sodium_hex2bin",
+      "sodium_increment",
+      "sodium_library_version_major",
+      "sodium_library_version_minor",
+      "sodium_version_string",
+      "sodium_memcmp",
+      "sodium_memzero",
+      "sodium_randombytes_buf",
+      "sodium_randombytes_uniform",
+      "sodium_randombytes_random16",
+      "Sodium\\bin2hex",
+      "Sodium\\compare",
+      "Sodium\\crypto_aead_aes256gcm_decrypt",
+      "Sodium\\crypto_aead_aes256gcm_encrypt",
+      "Sodium\\crypto_aead_aes256gcm_is_available",
+      "Sodium\\crypto_aead_chacha20poly1305_decrypt",
+      "Sodium\\crypto_aead_chacha20poly1305_encrypt",
+      "Sodium\\crypto_aead_chacha20poly1305_ietf_decrypt",
+      "Sodium\\crypto_aead_chacha20poly1305_ietf_encrypt",
+      "Sodium\\crypto_auth",
+      "Sodium\\crypto_auth_verify",
+      "Sodium\\crypto_box",
+      "Sodium\\crypto_box_keypair",
+      "Sodium\\crypto_box_keypair_from_secretkey_and_publickey",
+      "Sodium\\crypto_box_open",
+      "Sodium\\crypto_box_publickey",
+      "Sodium\\crypto_box_publickey_from_secretkey",
+      "Sodium\\crypto_box_seal",
+      "Sodium\\crypto_box_seal_open",
+      "Sodium\\crypto_box_secretkey",
+      "Sodium\\crypto_generichash",
+      "Sodium\\crypto_generichash_final",
+      "Sodium\\crypto_generichash_init",
+      "Sodium\\crypto_generichash_update",
+      "Sodium\\crypto_kx",
+      "Sodium\\crypto_pwhash",
+      "Sodium\\crypto_pwhash_str",
+      "Sodium\\crypto_pwhash_str_verify",
+      "Sodium\\crypto_pwhash_scryptsalsa208sha256",
+      "Sodium\\crypto_pwhash_scryptsalsa208sha256_str",
+      "Sodium\\crypto_pwhash_scryptsalsa208sha256_str_verify",
+      "Sodium\\crypto_scalarmult",
+      "Sodium\\crypto_scalarmult_base",
+      "Sodium\\crypto_secretbox",
+      "Sodium\\crypto_secretbox_open",
+      "Sodium\\crypto_shorthash",
+      "Sodium\\crypto_sign",
+      "Sodium\\crypto_sign_detached",
+      "Sodium\\crypto_sign_keypair",
+      "Sodium\\crypto_sign_open",
+      "Sodium\\crypto_sign_publickey",
+      "Sodium\\crypto_sign_publickey_from_secretkey",
+      "Sodium\\crypto_sign_secretkey",
+      "Sodium\\crypto_sign_seed_keypair",
+      "Sodium\\crypto_sign_verify_detached",
+      "Sodium\\crypto_sign_ed25519_pk_to_curve25519",
+      "Sodium\\crypto_sign_ed25519_sk_to_curve25519",
+      "Sodium\\crypto_stream",
+      "Sodium\\crypto_stream_xor",
+      "Sodium\\hex2bin",
+      "Sodium\\memcmp",
+      "Sodium\\memzero",
+      "Sodium\\randombytes_buf",
+      "Sodium\\randombytes_uniform",
+      "Sodium\\randombytes_random16"
+    ],
+    "classes": [
+      "SodiumException"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "ircmaxell/password-compat",
+    "require": {
+      "php": "5.3.7"
+    },
+    "constants": [
+      "PASSWORD_BCRYPT",
+      "PASSWORD_DEFAULT",
+      "PASSWORD_BCRYPT_DEFAULT_COST"
+    ],
+    "functions": [
+      "password_hash",
+      "password_get_info",
+      "password_needs_rehash",
+      "password_verify"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "sarciszewski/php-future",
+    "require": {
+      "php": "5.4"
+    },
+    "replace": {
+      "php": "5.*"
+    },
+    "classes": [
+      "JsonSerializable",
+      "SessionHandlerInterface"
+    ],
+    "functions": [
+      "array_column",
+      "boolval",
+      "hex2bin",
+      "hash_equals",
+      "hash_pbkdf2",
+      "getimagesizefromstring",
+      "openssl_pbkdf2"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "php-ds/php-ds",
+    "require": {
+      "php": "7.0"
+    },
+    "replace": {
+      "ext-ds": "*"
+    },
+    "classes": [
+      "Ds\\Collection",
+      "Ds\\Hashable",
+      "Ds\\Sequence",
+      "Ds\\Vector",
+      "Ds\\Deque",
+      "Ds\\Map",
+      "Ds\\Pair",
+      "Ds\\Set",
+      "Ds\\Stack",
+      "Ds\\Queue",
+      "Ds\\PriorityQueue"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "mongofill/mongofill",
+    "require": {},
+    "replace": {
+      "ext-mongo": "*"
+    },
+    "functions": [
+      "bson_encode",
+      "bson_decode",
+      "bson_encode_multiple",
+      "bson_decode_multiple"
+    ],
+    "classes": [
+      "MongoClient",
+      "MongoDB",
+      "MongoCollection",
+      "MongoCursor",
+      "MongoId",
+      "MongoCode",
+      "MongoDate",
+      "MongoRegex",
+      "MongoBinData",
+      "MongoInt32",
+      "MongoInt64",
+      "MongoDBRef",
+      "MongoMinKey",
+      "MongoMaxKey",
+      "MongoTimestamp",
+      "MongoGridFS",
+      "MongoGridFSFile",
+      "MongoGridFSCursor",
+      "MongoLog",
+      "Mongo",
+      "MongoException",
+      "MongoResultException",
+      "MongoCursorException",
+      "MongoCursorTimeoutException",
+      "MongoConnectionException",
+      "MongoGridFSException"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "krakjoe/pthreads-polyfill",
+    "require": {},
+    "replace": {
+      "ext-pthreads": "*"
+    },
+    "classes": [
+      "Thread",
+      "Pool",
+      "Collectable",
+      "Threaded",
+      "Volatile",
+      "Worker"
+    ]
+  },
+  {
+    "type": "stub",
+    "name": "wizacha/new-relic-polyfill",
+    "require": {},
+    "replace": {
+      "ext-newrelic": "*"
+    },
+    "functions": [
+      "newrelic_add_custom_parameter",
+      "newrelic_add_custom_tracer",
+      "newrelic_background_job",
+      "newrelic_capture_params",
+      "newrelic_custom_metric",
+      "newrelic_disable_autorum",
+      "newrelic_end_of_transaction",
+      "newrelic_end_transaction",
+      "newrelic_get_browser_timing_footer",
+      "newrelic_get_browser_timing_header",
+      "newrelic_ignore_apdex",
+      "newrelic_ignore_transaction",
+      "newrelic_name_transaction",
+      "newrelic_notice_error",
+      "newrelic_record_custom_event",
+      "newrelic_record_datastore_segment",
+      "newrelic_set_appname",
+      "newrelic_set_user_attributes",
+      "newrelic_start_transaction"
+    ]
+  },
+  {
+    "type": "alternative",
+    "name": "byjg/phpthread",
+    "require": {
+      "php": "5.4"
+    },
+    "replace": {
+      "ext-pthreads": "*",
+      "ext-pcntl": "*"
+    }
+  },
+  {
+    "type": "alternative",
+    "name": "lavoiesl/apc-polyfill",
+    "require": {
+      "ext-apcu": "*"
+    },
+    "replace": {
+      "ext-apc": "*"
+    }
+  },
+  {
+    "type": "polyfill",
+    "name": "yuloh/bccomp-polyfill",
+    "require": {},
+    "replace": {
+      "ext-bcmath": "*"
+    },
+    "functions": [
+      "bccomp"
+    ]
+  },
+  {
+    "type": "stub",
+    "name": "ovr/newrelic-polyfill",
+    "require": {},
+    "replace": {
+      "ext-newrelic": "*"
+    },
+    "functions": [
+      "newrelic_add_custom_parameter",
+      "newrelic_add_custom_tracer",
+      "newrelic_background_job",
+      "newrelic_capture_params",
+      "newrelic_custom_metric",
+      "newrelic_disable_autorum",
+      "newrelic_end_of_transaction",
+      "newrelic_get_browser_timing_footer",
+      "newrelic_get_browser_timing_header",
+      "newrelic_ignore_apdex",
+      "newrelic_ignore_transaction",
+      "newrelic_name_transaction",
+      "newrelic_notice_error",
+      "newrelic_record_custom_event",
+      "newrelic_set_appname",
+      "newrelic_set_user_attributes",
+      "newrelic_start_transaction"
+    ]
+  },
+  {
+    "type": "polyfill",
+    "name": "jesseschalken/date-time-immutable-polyfill",
+    "require": {},
+    "replace": {
+      "php": "5.*"
+    },
+    "classes": [
+      "DateTimeInterface",
+      "DateTimeImmutable"
+    ]
+  },
+  {
+    "type": "alternative",
+    "name": "ducks-project/apache",
+    "require": {
+      "php": "5.3.9"
+    },
+    "replace": {}
+  },
+  {
+    "type": "polyfill",
+    "name": "wyrihaximus/msgpack",
+    "require": {
+      "php": "7.0"
+    },
+    "replace": {
+      "ext-msgpack": "*"
+    },
+    "functions": [
+      "msgpack_pack",
+      "msgpack_unpack"
+    ]
+  }
+]
