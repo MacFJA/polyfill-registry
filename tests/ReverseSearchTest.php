@@ -177,6 +177,7 @@ class ReverseSearchTest extends TestCase
             return array(
                 array(__DIR__.'/fixtures/registry/empty.json', 'test', array()),
                 array(__DIR__.'/fixtures/registry/ext-intl-one.json', 'test', array('ext-intl')),
+                array(__DIR__.'/fixtures/registry/pecl-http-one.json', 'test', array('pecl-http')),
                 array(__DIR__.'/fixtures/registry/constant-A_CONST-one.json', 'test4', array()),
             );
         }

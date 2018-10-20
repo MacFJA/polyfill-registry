@@ -1,0 +1,49 @@
+# Polyfill
+
+## Summary
+
+| Name | Type | Replace |
+|------|------|---------|
+{%- for row in var %}
+| [`{{ row.name }}`](#{{ row.name|replace('/','_') }}) | {% if row.type == 'polyfill' %}**{{ row.type }}**{% elif row.type == 'stub' %}_{{ row.type }}_{% else %}{{ row.type }}{% endif %} | {{ row.replace|join(', ') }} |
+{%- endfor %}
+
+## Different type of Polyfill
+
+There 3 types of polyfill:
+
+ - **`polyfill`**, the true polyfill: You add the dependency and it work out of the box
+ - **`stub`**, the faker: Provide empty implementation (ex: xdebug, NewRelic, etc.)
+ - **`alternative`**, it's your choice: You have to manually activate the code
+
+## Details
+
+{% for row in var %}
+### `{{ row.name }}` <a id="{{ row.name|replace('/','_') }}"></a>
+**Type:** `{{ row.type }}`
+
+**Require:**
+{% for name,version in row.require.items() -%}
+  - `{{ name }}`, version __{{ version }}__
+{% else -%}
+_None_
+{% endfor %}
+**Functions:**
+{% for function in row.functions -%}
+  - `{{ function }}`
+{% else -%}
+_None_
+{% endfor %}
+**Classes:**
+{% for class in row.classes -%}
+  - `{{ class }}`
+{% else -%}
+_None_
+{% endfor %}
+**Constants:**
+{% for constant in row.constants -%}
+  - `{{ constant }}`
+{% else -%}
+_None_
+{% endfor %}
+{% endfor %}

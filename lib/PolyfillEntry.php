@@ -10,6 +10,7 @@ namespace MacFJA\PolyFillRegistry;
  */
 class PolyfillEntry implements EntryInterface
 {
+    /** @var array */
     private $jsonData = array();
 
     /**
@@ -29,8 +30,8 @@ class PolyfillEntry implements EntryInterface
     }
 
     /**
-     * @param $path
-     * @param $default
+     * @param string $path
+     * @param mixed $default
      * @return mixed
      * @codeCoverageIgnore
      */
@@ -45,6 +46,8 @@ class PolyfillEntry implements EntryInterface
 
     /**
      * @param array $jsonArray
+     *
+     * @return void
      */
     public function parseData($jsonArray)
     {
@@ -81,11 +84,16 @@ class PolyfillEntry implements EntryInterface
      */
     public function canReplaceExtension($name)
     {
-        if (strpos($name, 'ext-') !== 0) {
-            $name = 'ext-'.$name;
-        }
         $replace = $this->getValue(self::JSON_KEY_REPLACE, array());
-        return array_key_exists($name, $replace);
+
+        if (strpos($name, 'ext-') === 0 || strpos($name, 'pecl-') === 0) {
+            return array_key_exists($name, $replace);
+        }
+
+        $extName = 'ext-' . $name;
+        $peclName = 'pecl-' . $name;
+
+        return array_key_exists($extName, $replace) || array_key_exists($peclName, $replace);
     }
 
     /**
@@ -101,8 +109,6 @@ class PolyfillEntry implements EntryInterface
             return false;
         }
         $replaceVersion = $replace['php'];
-
-        $replaceVersion;
 
         throw new \BadMethodCallException('Not yet implemented');
     }
@@ -145,9 +151,18 @@ class PolyfillEntry implements EntryInterface
     public function getReplacedExtensions()
     {
         $replace = $this->getValue(self::JSON_KEY_REPLACE, array());
+        /** @var string[] $extensions */
         $extensions = array_keys($replace);
-        return array_filter($extensions, function ($item) {
-            return strpos($item, 'ext-') === 0;
-        });
+        return array_filter(
+            $extensions,
+            /**
+             * @internal
+             * @param string $item
+             * @return bool
+             */
+            function ($item) {
+                return strpos($item, 'ext-') === 0 || strpos($item, 'pecl-') === 0;
+            }
+        );
     }
 }

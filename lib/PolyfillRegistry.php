@@ -10,6 +10,7 @@ namespace MacFJA\PolyFillRegistry;
  */
 class PolyfillRegistry implements ReaderInterface, ReverseSearchInterface
 {
+    /** @var array */
     private $registry = array();
 
     public function getPolyfillForExtension($name)
@@ -17,18 +18,29 @@ class PolyfillRegistry implements ReaderInterface, ReverseSearchInterface
         if (strpos($name, 'ext-') === 0) {
             $name = substr($name, 4);
         }
-        return $this->filter($this->getRegistry(), function ($row) use ($name) {
-            if (!array_key_exists('replace', $row)) {
-                return false;
+        if (strpos($name, 'pecl-') === 0) {
+            $name = substr($name, 5);
+        }
+        return $this->filter(
+            $this->getRegistry(),
+            /**
+             * @param array $row
+             * @return bool
+             */
+            function ($row) use ($name) {
+                if (!array_key_exists('replace', $row)) {
+                    return false;
+                }
+                return array_key_exists('ext-'.$name, $row['replace'])
+                    || array_key_exists('pecl-'.$name, $row['replace']);
             }
-            return array_key_exists('ext-'.$name, $row['replace']);
-        });
+        );
     }
 
     /**
-     * @param $registry
-     * @param $filter
-     * @return array
+     * @param array $registry
+     * @param callable $filter
+     * @return PolyfillEntry[]
      *
      * @codeCoverageIgnore
      */
@@ -36,27 +48,41 @@ class PolyfillRegistry implements ReaderInterface, ReverseSearchInterface
     {
         $entries = array_filter($registry, $filter);
 
-        $entries = array_map(function ($item) {
-            return PolyfillEntry::createFromJson($item);
-        }, $entries);
+        $entries = array_map(
+            /**
+             * @param array $item
+             * @return PolyfillEntry
+             */
+            function ($item) {
+                return PolyfillEntry::createFromJson($item);
+            },
+            $entries
+        );
 
         return $entries;
     }
 
     public function getPolyfillForFunction($name)
     {
-        $entries = $this->filter($this->getRegistry(), function ($row) use ($name) {
-            if (!array_key_exists('functions', $row)) {
-                return false;
+        $entries = $this->filter(
+            $this->getRegistry(),
+            /**
+             * @param array $row
+             * @return bool
+             */
+            function ($row) use ($name) {
+                if (!array_key_exists('functions', $row)) {
+                    return false;
+                }
+                return in_array($name, $row['functions'], true);
             }
-            return in_array($name, $row['functions'], true);
-        });
+        );
 
         return $entries;
     }
 
     /**
-     * @param $file
+     * @param string $file
      * @return array|mixed
      * @codeCoverageIgnore
      */
@@ -91,12 +117,19 @@ class PolyfillRegistry implements ReaderInterface, ReverseSearchInterface
 
     public function getPolyfillForClass($name)
     {
-        $entries = $this->filter($this->getRegistry(), function ($row) use ($name) {
-            if (!array_key_exists('classes', $row)) {
-                return false;
+        $entries = $this->filter(
+            $this->getRegistry(),
+            /**
+             * @param array $row
+             * @return bool
+             */
+            function ($row) use ($name) {
+                if (!array_key_exists('classes', $row)) {
+                    return false;
+                }
+                return in_array($name, $row['classes'], true);
             }
-            return in_array($name, $row['classes'], true);
-        });
+        );
 
         return $entries;
     }
@@ -121,12 +154,19 @@ class PolyfillRegistry implements ReaderInterface, ReverseSearchInterface
      */
     public function getPolyfillForConstant($name)
     {
-        $entries = $this->filter($this->getRegistry(), function ($row) use ($name) {
-            if (!array_key_exists('constants', $row)) {
-                return false;
+        $entries = $this->filter(
+            $this->getRegistry(),
+            /**
+             * @param array $row
+             * @return bool
+             */
+            function ($row) use ($name) {
+                if (!array_key_exists('constants', $row)) {
+                    return false;
+                }
+                return in_array($name, $row['constants'], true);
             }
-            return in_array($name, $row['constants'], true);
-        });
+        );
 
         return $entries;
     }
@@ -137,9 +177,16 @@ class PolyfillRegistry implements ReaderInterface, ReverseSearchInterface
      */
     private function getPolyfillWithName($name)
     {
-        $polyfill = $this->filter($this->getRegistry(), function ($row) use ($name) {
-            return $row['name'] === $name;
-        });
+        $polyfill = $this->filter(
+            $this->getRegistry(),
+            /**
+             * @param array $row
+             * @return bool
+             */
+            function ($row) use ($name) {
+                return $row['name'] === $name;
+            }
+        );
 
         if (count($polyfill) === 0) {
             return null;

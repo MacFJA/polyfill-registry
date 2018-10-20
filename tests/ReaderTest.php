@@ -127,7 +127,9 @@ class ReaderTest extends TestCase
         if ($testName === 'testGetPolyfillForExtension') {
             return array(
                 array(__DIR__.'/fixtures/registry/empty.json', 'ext-intl', array()),
+                array(__DIR__.'/fixtures/registry/empty.json', 'pecl-intl', array()),
                 array(__DIR__.'/fixtures/registry/ext-intl-one.json', 'ext-intl', array('test')),
+                array(__DIR__.'/fixtures/registry/pecl-http-one.json', 'pecl-http', array('test')),
                 array(__DIR__.'/fixtures/registry/function-apc_add-one.json', 'ext-intl', array()),
             );
         }

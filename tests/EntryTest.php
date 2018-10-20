@@ -186,6 +186,7 @@ class EntryTest extends TestCase
                 array('{"replace": {"ext-intl": "*", "php": "5.3"}}', array('ext-intl')),
                 array('{"replace": {"ext-intl": "*", "curl": "*"}}', array('ext-intl')),
                 array('{"replace": {"ext-intl": "*", "ext-curl": "*"}}', array('ext-intl', 'ext-curl')),
+                array('{"replace": {"ext-intl": "*", "pecl-http": "*"}}', array('ext-intl', 'pecl-http')),
                 array('{}', array()),
             );
         }
