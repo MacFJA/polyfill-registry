@@ -1,4 +1,14 @@
 {
+    "name": "macfja/polyfill-registry",
+    "description": "List of all (most of) polyfills for PHP",
+    "keywords": ["polyfill", "polyfills", "extension", "extensions", "registry"],
+    "homepage": "https://github.com/MacFJA/polyfill-registry",
+    "support": {
+        "issues": "https://github.com/MacFJA/polyfill-registry/issues",
+        "source": "https://github.com/MacFJA/polyfill-registry",
+        "docs": "https://github.com/MacFJA/polyfill-registry"
+    },
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
