@@ -686,6 +686,7 @@
     "require": {
       "php": "5.3"
     },
+    "replace": {},
     "functions": [
       "getallheaders"
     ]
@@ -696,6 +697,7 @@
     "require": {
       "php": "5.2"
     },
+    "replace": {},
     "constants": [
       "PHP_VERSION_ID",
       "RANDOM_COMPAT_READ_BUFFER"
@@ -956,6 +958,7 @@
     "require": {
       "php": "5.3.7"
     },
+    "replace": {},
     "constants": [
       "PASSWORD_BCRYPT",
       "PASSWORD_DEFAULT",

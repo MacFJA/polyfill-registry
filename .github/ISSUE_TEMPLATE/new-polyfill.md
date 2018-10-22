@@ -1,11 +1,11 @@
-<!-- The name of the polufile -->
+<!-- The name of the polyfill -->
 **Name of the polyfill**: <!-- Often it's the composer package name -->
 
 <!-- Where to find the source code, polyfill website, author website -->
 **Url(s)**: <!-- Any revelant URL -->
 
 <!-- Which type of polyfill, more information in the README -->
-**Type**:  <!-- "polyfill", "stub", "alternative" or "?" -->
+**Type**: <!-- "polyfill", "stub", "alternative" or "?" -->
 
 <!-- What are the mandatory dependency -->
 **Requirement**: <!-- In most of case, it's the "require" section of the composer.json -->

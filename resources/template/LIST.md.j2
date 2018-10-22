@@ -19,11 +19,17 @@ There 3 types of polyfill:
 ## Details
 
 {% for row in var %}
-### `{{ row.name }}` <a id="{{ row.name|replace('/','_') }}"></a>
+### <a id="{{ row.name|replace('/','_') }}"></a>Polyfill `{{ row.name }}`
 **Type:** `{{ row.type }}`
 
 **Require:**
 {% for name,version in row.require.items() -%}
+  - `{{ name }}`, version __{{ version }}__
+{% else -%}
+_None_
+{% endfor %}
+**Replace:**
+{% for name,version in row.replace.items() -%}
   - `{{ name }}`, version __{{ version }}__
 {% else -%}
 _None_

@@ -110,6 +110,8 @@ class PolyfillEntry implements EntryInterface
         }
         $replaceVersion = $replace['php'];
 
+        $replaceVersion;
+
         throw new \BadMethodCallException('Not yet implemented');
     }
 

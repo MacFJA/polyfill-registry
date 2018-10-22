@@ -60,13 +60,16 @@ There 3 types of polyfill:
 ## Details
 
 
-### `symfony/polyfill-apcu` <a id="symfony_polyfill-apcu"></a>
+### <a id="symfony_polyfill-apcu"></a>Polyfill `symfony/polyfill-apcu`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
 - `ext-apc`, version __*__
 
+**Replace:**
+- `ext-apcu`, version __*__
+
 **Functions:**
 - `apcu_add`
 - `apcu_delete`
@@ -87,11 +90,14 @@ There 3 types of polyfill:
 _None_
 
 
-### `symfony/polyfill-php54` <a id="symfony_polyfill-php54"></a>
+### <a id="symfony_polyfill-php54"></a>Polyfill `symfony/polyfill-php54`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `php`, version __5.4.*__
 
 **Functions:**
 - `trait_exists`
@@ -106,11 +112,14 @@ _None_
 _None_
 
 
-### `symfony/polyfill-php55` <a id="symfony_polyfill-php55"></a>
+### <a id="symfony_polyfill-php55"></a>Polyfill `symfony/polyfill-php55`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `php`, version __5.5.*__
 
 **Functions:**
 - `boolval`
@@ -131,11 +140,14 @@ _None_
 - `PASSWORD_BCRYPT_DEFAULT_COST`
 
 
-### `symfony/polyfill-php56` <a id="symfony_polyfill-php56"></a>
+### <a id="symfony_polyfill-php56"></a>Polyfill `symfony/polyfill-php56`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `php`, version __5.6.*__
 
 **Functions:**
 - `hash_equals`
@@ -151,11 +163,14 @@ _None_
 _None_
 
 
-### `symfony/polyfill-php70` <a id="symfony_polyfill-php70"></a>
+### <a id="symfony_polyfill-php70"></a>Polyfill `symfony/polyfill-php70`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `php`, version __7.0.*__
 
 **Functions:**
 - `intdiv`
@@ -177,11 +192,14 @@ _None_
 - `PHP_INT_MIN`
 
 
-### `symfony/polyfill-php71` <a id="symfony_polyfill-php71"></a>
+### <a id="symfony_polyfill-php71"></a>Polyfill `symfony/polyfill-php71`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `php`, version __7.1.*__
 
 **Functions:**
 - `is_iterable`
@@ -193,11 +211,14 @@ _None_
 _None_
 
 
-### `symfony/polyfill-php72` <a id="symfony_polyfill-php72"></a>
+### <a id="symfony_polyfill-php72"></a>Polyfill `symfony/polyfill-php72`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `php`, version __7.2.*__
 
 **Functions:**
 - `spl_object_id`
@@ -213,11 +234,14 @@ _None_
 - `PHP_OS_FAMILY`
 
 
-### `symfony/polyfill-php73` <a id="symfony_polyfill-php73"></a>
+### <a id="symfony_polyfill-php73"></a>Polyfill `symfony/polyfill-php73`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `php`, version __7.3.*__
 
 **Functions:**
 - `is_countable`
@@ -232,11 +256,14 @@ _None_
 _None_
 
 
-### `symfony/polyfill-iconv` <a id="symfony_polyfill-iconv"></a>
+### <a id="symfony_polyfill-iconv"></a>Polyfill `symfony/polyfill-iconv`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `ext-iconv`, version __*__
 
 **Functions:**
 - `iconv`
@@ -260,11 +287,14 @@ _None_
 - `ICONV_MIME_DECODE_CONTINUE_ON_ERROR`
 
 
-### `symfony/polyfill-intl-grapheme` <a id="symfony_polyfill-intl-grapheme"></a>
+### <a id="symfony_polyfill-intl-grapheme"></a>Polyfill `symfony/polyfill-intl-grapheme`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `ext-intl`, version __*__
 
 **Functions:**
 - `grapheme_extract`
@@ -284,11 +314,14 @@ _None_
 _None_
 
 
-### `symfony/polyfill-intl-icu` <a id="symfony_polyfill-intl-icu"></a>
+### <a id="symfony_polyfill-intl-icu"></a>Polyfill `symfony/polyfill-intl-icu`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `ext-intl`, version __*__
 
 **Functions:**
 - `intl_is_failure`
@@ -306,11 +339,14 @@ _None_
 _None_
 
 
-### `symfony/polyfill-intl-messageformatter` <a id="symfony_polyfill-intl-messageformatter"></a>
+### <a id="symfony_polyfill-intl-messageformatter"></a>Polyfill `symfony/polyfill-intl-messageformatter`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `ext-intl`, version __*__
 
 **Functions:**
 - `msgfmt_format_message`
@@ -322,11 +358,14 @@ _None_
 _None_
 
 
-### `symfony/polyfill-intl-normalizer` <a id="symfony_polyfill-intl-normalizer"></a>
+### <a id="symfony_polyfill-intl-normalizer"></a>Polyfill `symfony/polyfill-intl-normalizer`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `ext-intl`, version __*__
 
 **Functions:**
 _None_
@@ -338,11 +377,14 @@ _None_
 _None_
 
 
-### `symfony/polyfill-intl-idn` <a id="symfony_polyfill-intl-idn"></a>
+### <a id="symfony_polyfill-intl-idn"></a>Polyfill `symfony/polyfill-intl-idn`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `ext-intl`, version __*__
 
 **Functions:**
 - `idn_to_ascii`
@@ -390,11 +432,14 @@ _None_
 - `IDNA_ERROR_CONTEXTJ`
 
 
-### `symfony/polyfill-mbstring` <a id="symfony_polyfill-mbstring"></a>
+### <a id="symfony_polyfill-mbstring"></a>Polyfill `symfony/polyfill-mbstring`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `ext-mbstring`, version __*__
 
 **Functions:**
 - `mb_convert_encoding`
@@ -442,11 +487,14 @@ _None_
 _None_
 
 
-### `symfony/intl` <a id="symfony_intl"></a>
+### <a id="symfony_intl"></a>Polyfill `symfony/intl`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `ext-intl`, version __*__
 
 **Functions:**
 _None_
@@ -461,11 +509,14 @@ _None_
 _None_
 
 
-### `symfony/polyfill-ctype` <a id="symfony_polyfill-ctype"></a>
+### <a id="symfony_polyfill-ctype"></a>Polyfill `symfony/polyfill-ctype`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `ext-ctype`, version __*__
 
 **Functions:**
 - `ctype_alnum`
@@ -487,11 +538,19 @@ _None_
 _None_
 
 
-### `symfony/polyfill` <a id="symfony_polyfill"></a>
+### <a id="symfony_polyfill"></a>Polyfill `symfony/polyfill`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `ext-mbstring`, version __*__
+- `ext-intl`, version __*__
+- `ext-iconv`, version __*__
+- `php`, version __5.* &amp;&amp; 7.*__
+- `ext-apcu`, version __*__
+- `ext-ctype`, version __*__
 
 **Functions:**
 - `apcu_add`
@@ -675,11 +734,14 @@ _None_
 - `IDNA_ERROR_CONTEXTJ`
 
 
-### `phpseclib/mcrypt_compat` <a id="phpseclib_mcrypt_compat"></a>
+### <a id="phpseclib_mcrypt_compat"></a>Polyfill `phpseclib/mcrypt_compat`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `ext-mcrypt`, version __*__
 
 **Functions:**
 - `mcrypt_list_algorithms`
@@ -759,11 +821,14 @@ _None_
 - `MCRYPT_XTEA`
 
 
-### `ralouphie/getallheaders` <a id="ralouphie_getallheaders"></a>
+### <a id="ralouphie_getallheaders"></a>Polyfill `ralouphie/getallheaders`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+_None_
 
 **Functions:**
 - `getallheaders`
@@ -775,11 +840,14 @@ _None_
 _None_
 
 
-### `paragonie/random_compat` <a id="paragonie_random_compat"></a>
+### <a id="paragonie_random_compat"></a>Polyfill `paragonie/random_compat`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.2__
+
+**Replace:**
+_None_
 
 **Functions:**
 - `random_bytes`
@@ -794,11 +862,15 @@ _None_
 - `RANDOM_COMPAT_READ_BUFFER`
 
 
-### `paragonie/sodium_compat` <a id="paragonie_sodium_compat"></a>
+### <a id="paragonie_sodium_compat"></a>Polyfill `paragonie/sodium_compat`
 **Type:** `polyfill`
 
 **Require:**
 _None_
+
+**Replace:**
+- `ext-sodium`, version __*__
+- `ext-libsodium`, version __*__
 
 **Functions:**
 - `sodium_bin2hex`
@@ -1033,11 +1105,14 @@ _None_
 - `SODIUM_CRYPTO_STREAM_NONCEBYTES`
 
 
-### `ircmaxell/password-compat` <a id="ircmaxell_password-compat"></a>
+### <a id="ircmaxell_password-compat"></a>Polyfill `ircmaxell/password-compat`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3.7__
+
+**Replace:**
+_None_
 
 **Functions:**
 - `password_hash`
@@ -1054,11 +1129,14 @@ _None_
 - `PASSWORD_BCRYPT_DEFAULT_COST`
 
 
-### `sarciszewski/php-future` <a id="sarciszewski_php-future"></a>
+### <a id="sarciszewski_php-future"></a>Polyfill `sarciszewski/php-future`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.4__
+
+**Replace:**
+- `php`, version __5.*__
 
 **Functions:**
 - `array_column`
@@ -1077,11 +1155,14 @@ _None_
 _None_
 
 
-### `php-ds/php-ds` <a id="php-ds_php-ds"></a>
+### <a id="php-ds_php-ds"></a>Polyfill `php-ds/php-ds`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __7.0__
+
+**Replace:**
+- `ext-ds`, version __*__
 
 **Functions:**
 _None_
@@ -1103,11 +1184,14 @@ _None_
 _None_
 
 
-### `mongofill/mongofill` <a id="mongofill_mongofill"></a>
+### <a id="mongofill_mongofill"></a>Polyfill `mongofill/mongofill`
 **Type:** `polyfill`
 
 **Require:**
 _None_
+
+**Replace:**
+- `ext-mongo`, version __*__
 
 **Functions:**
 - `bson_encode`
@@ -1147,11 +1231,14 @@ _None_
 _None_
 
 
-### `krakjoe/pthreads-polyfill` <a id="krakjoe_pthreads-polyfill"></a>
+### <a id="krakjoe_pthreads-polyfill"></a>Polyfill `krakjoe/pthreads-polyfill`
 **Type:** `polyfill`
 
 **Require:**
 _None_
+
+**Replace:**
+- `ext-pthreads`, version __*__
 
 **Functions:**
 _None_
@@ -1168,11 +1255,14 @@ _None_
 _None_
 
 
-### `wizacha/new-relic-polyfill` <a id="wizacha_new-relic-polyfill"></a>
+### <a id="wizacha_new-relic-polyfill"></a>Polyfill `wizacha/new-relic-polyfill`
 **Type:** `stub`
 
 **Require:**
 _None_
+
+**Replace:**
+- `ext-newrelic`, version __*__
 
 **Functions:**
 - `newrelic_add_custom_parameter`
@@ -1202,12 +1292,16 @@ _None_
 _None_
 
 
-### `byjg/phpthread` <a id="byjg_phpthread"></a>
+### <a id="byjg_phpthread"></a>Polyfill `byjg/phpthread`
 **Type:** `alternative`
 
 **Require:**
 - `php`, version __5.4__
 
+**Replace:**
+- `ext-pthreads`, version __*__
+- `ext-pcntl`, version __*__
+
 **Functions:**
 _None_
 
@@ -1218,12 +1312,15 @@ _None_
 _None_
 
 
-### `lavoiesl/apc-polyfill` <a id="lavoiesl_apc-polyfill"></a>
+### <a id="lavoiesl_apc-polyfill"></a>Polyfill `lavoiesl/apc-polyfill`
 **Type:** `alternative`
 
 **Require:**
 - `ext-apcu`, version __*__
 
+**Replace:**
+- `ext-apc`, version __*__
+
 **Functions:**
 _None_
 
@@ -1234,11 +1331,14 @@ _None_
 _None_
 
 
-### `yuloh/bccomp-polyfill` <a id="yuloh_bccomp-polyfill"></a>
+### <a id="yuloh_bccomp-polyfill"></a>Polyfill `yuloh/bccomp-polyfill`
 **Type:** `polyfill`
 
 **Require:**
 _None_
+
+**Replace:**
+- `ext-bcmath`, version __*__
 
 **Functions:**
 - `bccomp`
@@ -1250,11 +1350,14 @@ _None_
 _None_
 
 
-### `ovr/newrelic-polyfill` <a id="ovr_newrelic-polyfill"></a>
+### <a id="ovr_newrelic-polyfill"></a>Polyfill `ovr/newrelic-polyfill`
 **Type:** `stub`
 
 **Require:**
 _None_
+
+**Replace:**
+- `ext-newrelic`, version __*__
 
 **Functions:**
 - `newrelic_add_custom_parameter`
@@ -1282,11 +1385,14 @@ _None_
 _None_
 
 
-### `jesseschalken/date-time-immutable-polyfill` <a id="jesseschalken_date-time-immutable-polyfill"></a>
+### <a id="jesseschalken_date-time-immutable-polyfill"></a>Polyfill `jesseschalken/date-time-immutable-polyfill`
 **Type:** `polyfill`
 
 **Require:**
 _None_
+
+**Replace:**
+- `php`, version __5.*__
 
 **Functions:**
 _None_
@@ -1299,11 +1405,14 @@ _None_
 _None_
 
 
-### `ducks-project/apache` <a id="ducks-project_apache"></a>
+### <a id="ducks-project_apache"></a>Polyfill `ducks-project/apache`
 **Type:** `alternative`
 
 **Require:**
 - `php`, version __5.3.9__
+
+**Replace:**
+_None_
 
 **Functions:**
 _None_
@@ -1315,11 +1424,14 @@ _None_
 _None_
 
 
-### `wyrihaximus/msgpack` <a id="wyrihaximus_msgpack"></a>
+### <a id="wyrihaximus_msgpack"></a>Polyfill `wyrihaximus/msgpack`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __7.0__
+
+**Replace:**
+- `ext-msgpack`, version __*__
 
 **Functions:**
 - `msgpack_pack`
@@ -1332,11 +1444,14 @@ _None_
 _None_
 
 
-### `appserver-io/pthreads-polyfill` <a id="appserver-io_pthreads-polyfill"></a>
+### <a id="appserver-io_pthreads-polyfill"></a>Polyfill `appserver-io/pthreads-polyfill`
 **Type:** `polyfill`
 
 **Require:**
 _None_
+
+**Replace:**
+- `ext-pthreads`, version __*__
 
 **Functions:**
 _None_
@@ -1355,11 +1470,14 @@ _None_
 _None_
 
 
-### `fisharebest/ext-calendar` <a id="fisharebest_ext-calendar"></a>
+### <a id="fisharebest_ext-calendar"></a>Polyfill `fisharebest/ext-calendar`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `ext-calendar`, version __*__
 
 **Functions:**
 - `cal_days_in_month`
@@ -1408,11 +1526,14 @@ _None_
 - `CAL_JEWISH_ADD_GERESHAYIM`
 
 
-### `jakeasmith/http_build_url` <a id="jakeasmith_http_build_url"></a>
+### <a id="jakeasmith_http_build_url"></a>Polyfill `jakeasmith/http_build_url`
 **Type:** `polyfill`
 
 **Require:**
 _None_
+
+**Replace:**
+- `pecl_http`, version __*__
 
 **Functions:**
 - `http_build_url`
@@ -1434,11 +1555,20 @@ _None_
 - `HTTP_URL_STRIP_ALL`
 
 
-### `fisharebest/php-polyfill` <a id="fisharebest_php-polyfill"></a>
+### <a id="fisharebest_php-polyfill"></a>Polyfill `fisharebest/php-polyfill`
 **Type:** `polyfill`
 
 **Require:**
 _None_
+
+**Replace:**
+- `ext-apcu`, version __*__
+- `php`, version __5.4.* || 5.5.* || 5.6.* || 7.0.*__
+- `ext-iconv`, version __*__
+- `ext-intl`, version __*__
+- `ext-mbstring`, version __*__
+- `ext-calendar`, version __*__
+- `pecl-http`, version __*__
 
 **Functions:**
 - `apcu_add`
@@ -1614,11 +1744,14 @@ _None_
 - `HTTP_URL_STRIP_ALL`
 
 
-### `lavoiesl/apc-polyfill` <a id="lavoiesl_apc-polyfill"></a>
+### <a id="lavoiesl_apc-polyfill"></a>Polyfill `lavoiesl/apc-polyfill`
 **Type:** `alternative`
 
 **Require:**
 - `ext-apcu`, version __*__
+
+**Replace:**
+- `ext-apc`, version __*__
 
 **Functions:**
 - `apc_add`
@@ -1640,11 +1773,14 @@ _None_
 _None_
 
 
-### `ayesh/is_countable-polyfill` <a id="ayesh_is_countable-polyfill"></a>
+### <a id="ayesh_is_countable-polyfill"></a>Polyfill `ayesh/is_countable-polyfill`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __5.3__
+
+**Replace:**
+- `php`, version __7.3.*__
 
 **Functions:**
 - `is_countable`
@@ -1656,11 +1792,14 @@ _None_
 _None_
 
 
-### `wizaplace/sqreen-polyfill` <a id="wizaplace_sqreen-polyfill"></a>
+### <a id="wizaplace_sqreen-polyfill"></a>Polyfill `wizaplace/sqreen-polyfill`
 **Type:** `stub`
 
 **Require:**
 _None_
+
+**Replace:**
+- `ext-sqreen`, version __*__
 
 **Functions:**
 - `sqreen\auth_track`
@@ -1674,11 +1813,14 @@ _None_
 _None_
 
 
-### `mollie/polyfill-libsodium` <a id="mollie_polyfill-libsodium"></a>
+### <a id="mollie_polyfill-libsodium"></a>Polyfill `mollie/polyfill-libsodium`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __7.0__
+
+**Replace:**
+- `ext-sodium`, version __*__
 
 **Functions:**
 - `Sodium\crypto_aead_aes256gcm_is_available`
@@ -1802,11 +1944,17 @@ _None_
 - `Sodium\CRYPTO_PWHASH_MEMLIMIT_SENSITIVE`
 
 
-### `voku/portable-utf8` <a id="voku_portable-utf8"></a>
+### <a id="voku_portable-utf8"></a>Polyfill `voku/portable-utf8`
 **Type:** `polyfill`
 
 **Require:**
 - `php`, version __7.0__
+
+**Replace:**
+- `php`, version __7.2.*__
+- `ext-iconv`, version __*__
+- `ext-mbstring`, version __*__
+- `ext-intl`, version __*__
 
 **Functions:**
 - `spl_object_id`

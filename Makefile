@@ -29,7 +29,7 @@ JINJA2=docker run -i --rm --volume $(PWD)/resources/template:/data -e TEMPLATE=L
 vendor: composer.json
 	$(COMPOSER) install
 
-LIST.md: resources/registry.json
+LIST.md: resources/registry.json resources/template/LIST.md.j2
 	@{ echo '{"var":'; cat resources/registry.json; echo "}"; } \
 		| xargs --null -I % $(JINJA2) % > LIST.md
 
