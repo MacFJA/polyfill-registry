@@ -55,7 +55,7 @@ To provide the most complete registry, any contribution is welcome.
  - If you found an error, fell free to [open a issue on GitHub](https://github.com/MacFJA/polyfill-registry/issues/new) or a Pull Request.
  - If you have any question, you can [open a issue on GitHub](https://github.com/MacFJA/polyfill-registry/issues/new).
 
-If you change the file `resources/registry.json`, please run `make LIST.md` to update the [Markdown list](LIST.md)
+If you change the file `resources/registry.json`, please run `make generate_all` to sort the registry and update the [Markdown list](LIST.md)
 
 ## Compatibility/Component
 
