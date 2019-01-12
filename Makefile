@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 .DEFAULT_GOAL := help
-.PHONY: install render_list qa_ut format_registry generate_all
+.PHONY: install add render_list format_registry generate_all qa_ut help
 
 PWD = $(shell pwd)
 USER = $(shell id -u):$(shell id -g)
@@ -21,6 +21,10 @@ JQ=docker run -i --rm pinterb/jq:0.0.16
 
 install:           ## Install project dependencies
 install: vendor
+
+add:               ## Add a new polyfill into the registry
+	@php tools/add-new.php
+	$(MAKE) generate_all
 
 render_list:       ## Generate the LIST.md file
 render_list: format_registry LIST.md

@@ -23,17 +23,21 @@ There 3 types of polyfill:
 **Type:** `{{ row.type }}`
 
 **Require:**
+{% if row.require|length > 0 -%}
 {% for name,version in row.require.items() -%}
   - `{{ name }}`, version __{{ version }}__
+{% endfor -%}
 {% else -%}
 _None_
-{% endfor %}
+{% endif %}
 **Replace:**
+{% if row.replace|length > 0 -%}
 {% for name,version in row.replace.items() -%}
   - `{{ name }}`, version __{{ version }}__
+{% endfor -%}
 {% else -%}
 _None_
-{% endfor %}
+{% endif %}
 **Functions:**
 {% for function in row.functions -%}
   - `{{ function }}`
