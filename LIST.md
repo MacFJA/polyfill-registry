@@ -60,7 +60,7 @@ There 3 types of polyfill:
 ## Details
 
 
-### <a id="appserver-io_pthreads-polyfill"></a>Polyfill `appserver-io/pthreads-polyfill`
+### <a id="appserver-io_pthreads-polyfill"></a>Polyfill `appserver-io/pthreads-polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/appserver-io/pthreads-polyfill)
 **Type:** `polyfill`
 
 **Require:**
@@ -86,7 +86,7 @@ _None_
 _None_
 
 
-### <a id="ayesh_is_countable-polyfill"></a>Polyfill `ayesh/is_countable-polyfill`
+### <a id="ayesh_is_countable-polyfill"></a>Polyfill `ayesh/is_countable-polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/ayesh/is_countable-polyfill)
 **Type:** `polyfill`
 
 **Require:**
@@ -105,7 +105,7 @@ _None_
 _None_
 
 
-### <a id="byjg_phpthread"></a>Polyfill `byjg/phpthread`
+### <a id="byjg_phpthread"></a>Polyfill `byjg/phpthread` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/byjg/phpthread)
 **Type:** `alternative`
 
 **Require:**
@@ -125,7 +125,7 @@ _None_
 _None_
 
 
-### <a id="ducks-project_apache"></a>Polyfill `ducks-project/apache`
+### <a id="ducks-project_apache"></a>Polyfill `ducks-project/apache` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/ducks-project/apache)
 **Type:** `alternative`
 
 **Require:**
@@ -144,7 +144,7 @@ _None_
 _None_
 
 
-### <a id="fisharebest_ext-calendar"></a>Polyfill `fisharebest/ext-calendar`
+### <a id="fisharebest_ext-calendar"></a>Polyfill `fisharebest/ext-calendar` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/fisharebest/ext-calendar)
 **Type:** `polyfill`
 
 **Require:**
@@ -200,7 +200,7 @@ _None_
 - `CAL_JEWISH_ADD_GERESHAYIM`
 
 
-### <a id="fisharebest_php-polyfill"></a>Polyfill `fisharebest/php-polyfill`
+### <a id="fisharebest_php-polyfill"></a>Polyfill `fisharebest/php-polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/fisharebest/php-polyfill)
 **Type:** `polyfill`
 
 **Require:**
@@ -389,7 +389,7 @@ _None_
 - `HTTP_URL_STRIP_ALL`
 
 
-### <a id="ircmaxell_password-compat"></a>Polyfill `ircmaxell/password-compat`
+### <a id="ircmaxell_password-compat"></a>Polyfill `ircmaxell/password-compat` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/ircmaxell/password-compat)
 **Type:** `polyfill`
 
 **Require:**
@@ -413,7 +413,7 @@ _None_
 - `PASSWORD_BCRYPT_DEFAULT_COST`
 
 
-### <a id="jakeasmith_http_build_url"></a>Polyfill `jakeasmith/http_build_url`
+### <a id="jakeasmith_http_build_url"></a>Polyfill `jakeasmith/http_build_url` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/jakeasmith/http_build_url)
 **Type:** `polyfill`
 
 **Require:**
@@ -442,7 +442,7 @@ _None_
 - `HTTP_URL_STRIP_ALL`
 
 
-### <a id="jesseschalken_date-time-immutable-polyfill"></a>Polyfill `jesseschalken/date-time-immutable-polyfill`
+### <a id="jesseschalken_date-time-immutable-polyfill"></a>Polyfill `jesseschalken/date-time-immutable-polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/jesseschalken/date-time-immutable-polyfill)
 **Type:** `polyfill`
 
 **Require:**
@@ -462,7 +462,7 @@ _None_
 _None_
 
 
-### <a id="krakjoe_pthreads-polyfill"></a>Polyfill `krakjoe/pthreads-polyfill`
+### <a id="krakjoe_pthreads-polyfill"></a>Polyfill `krakjoe/pthreads-polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/krakjoe/pthreads-polyfill)
 **Type:** `polyfill`
 
 **Require:**
@@ -486,7 +486,7 @@ _None_
 _None_
 
 
-### <a id="lavoiesl_apc-polyfill"></a>Polyfill `lavoiesl/apc-polyfill`
+### <a id="lavoiesl_apc-polyfill"></a>Polyfill `lavoiesl/apc-polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/lavoiesl/apc-polyfill)
 **Type:** `alternative`
 
 **Require:**
@@ -505,7 +505,7 @@ _None_
 _None_
 
 
-### <a id="lavoiesl_apc-polyfill"></a>Polyfill `lavoiesl/apc-polyfill`
+### <a id="lavoiesl_apc-polyfill"></a>Polyfill `lavoiesl/apc-polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/lavoiesl/apc-polyfill)
 **Type:** `alternative`
 
 **Require:**
@@ -534,7 +534,7 @@ _None_
 _None_
 
 
-### <a id="mollie_polyfill-libsodium"></a>Polyfill `mollie/polyfill-libsodium`
+### <a id="mollie_polyfill-libsodium"></a>Polyfill `mollie/polyfill-libsodium` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/mollie/polyfill-libsodium)
 **Type:** `polyfill`
 
 **Require:**
@@ -665,7 +665,7 @@ _None_
 - `Sodium\CRYPTO_PWHASH_MEMLIMIT_SENSITIVE`
 
 
-### <a id="mongofill_mongofill"></a>Polyfill `mongofill/mongofill`
+### <a id="mongofill_mongofill"></a>Polyfill `mongofill/mongofill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/mongofill/mongofill)
 **Type:** `polyfill`
 
 **Require:**
@@ -712,7 +712,7 @@ _None_
 _None_
 
 
-### <a id="ovr_newrelic-polyfill"></a>Polyfill `ovr/newrelic-polyfill`
+### <a id="ovr_newrelic-polyfill"></a>Polyfill `ovr/newrelic-polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/ovr/newrelic-polyfill)
 **Type:** `stub`
 
 **Require:**
@@ -747,7 +747,7 @@ _None_
 _None_
 
 
-### <a id="paragonie_random_compat"></a>Polyfill `paragonie/random_compat`
+### <a id="paragonie_random_compat"></a>Polyfill `paragonie/random_compat` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/paragonie/random_compat)
 **Type:** `polyfill`
 
 **Require:**
@@ -769,7 +769,7 @@ _None_
 - `RANDOM_COMPAT_READ_BUFFER`
 
 
-### <a id="paragonie_sodium_compat"></a>Polyfill `paragonie/sodium_compat`
+### <a id="paragonie_sodium_compat"></a>Polyfill `paragonie/sodium_compat` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/paragonie/sodium_compat)
 **Type:** `polyfill`
 
 **Require:**
@@ -1012,7 +1012,7 @@ _None_
 - `SODIUM_CRYPTO_STREAM_NONCEBYTES`
 
 
-### <a id="php-ds_php-ds"></a>Polyfill `php-ds/php-ds`
+### <a id="php-ds_php-ds"></a>Polyfill `php-ds/php-ds` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/php-ds/php-ds)
 **Type:** `polyfill`
 
 **Require:**
@@ -1041,7 +1041,7 @@ _None_
 _None_
 
 
-### <a id="phpseclib_mcrypt_compat"></a>Polyfill `phpseclib/mcrypt_compat`
+### <a id="phpseclib_mcrypt_compat"></a>Polyfill `phpseclib/mcrypt_compat` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/phpseclib/mcrypt_compat)
 **Type:** `polyfill`
 
 **Require:**
@@ -1128,7 +1128,7 @@ _None_
 - `MCRYPT_XTEA`
 
 
-### <a id="ralouphie_getallheaders"></a>Polyfill `ralouphie/getallheaders`
+### <a id="ralouphie_getallheaders"></a>Polyfill `ralouphie/getallheaders` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/ralouphie/getallheaders)
 **Type:** `polyfill`
 
 **Require:**
@@ -1147,7 +1147,7 @@ _None_
 _None_
 
 
-### <a id="sarciszewski_php-future"></a>Polyfill `sarciszewski/php-future`
+### <a id="sarciszewski_php-future"></a>Polyfill `sarciszewski/php-future` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/sarciszewski/php-future)
 **Type:** `polyfill`
 
 **Require:**
@@ -1173,7 +1173,7 @@ _None_
 _None_
 
 
-### <a id="symfony_intl"></a>Polyfill `symfony/intl`
+### <a id="symfony_intl"></a>Polyfill `symfony/intl` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/intl)
 **Type:** `polyfill`
 
 **Require:**
@@ -1195,7 +1195,7 @@ _None_
 _None_
 
 
-### <a id="symfony_polyfill"></a>Polyfill `symfony/polyfill`
+### <a id="symfony_polyfill"></a>Polyfill `symfony/polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill)
 **Type:** `polyfill`
 
 **Require:**
@@ -1391,7 +1391,7 @@ _None_
 - `IDNA_ERROR_CONTEXTJ`
 
 
-### <a id="symfony_polyfill-apcu"></a>Polyfill `symfony/polyfill-apcu`
+### <a id="symfony_polyfill-apcu"></a>Polyfill `symfony/polyfill-apcu` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-apcu)
 **Type:** `polyfill`
 
 **Require:**
@@ -1421,7 +1421,7 @@ _None_
 _None_
 
 
-### <a id="symfony_polyfill-ctype"></a>Polyfill `symfony/polyfill-ctype`
+### <a id="symfony_polyfill-ctype"></a>Polyfill `symfony/polyfill-ctype` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-ctype)
 **Type:** `polyfill`
 
 **Require:**
@@ -1450,7 +1450,7 @@ _None_
 _None_
 
 
-### <a id="symfony_polyfill-iconv"></a>Polyfill `symfony/polyfill-iconv`
+### <a id="symfony_polyfill-iconv"></a>Polyfill `symfony/polyfill-iconv` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-iconv)
 **Type:** `polyfill`
 
 **Require:**
@@ -1481,7 +1481,7 @@ _None_
 - `ICONV_MIME_DECODE_CONTINUE_ON_ERROR`
 
 
-### <a id="symfony_polyfill-intl-grapheme"></a>Polyfill `symfony/polyfill-intl-grapheme`
+### <a id="symfony_polyfill-intl-grapheme"></a>Polyfill `symfony/polyfill-intl-grapheme` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-intl-grapheme)
 **Type:** `polyfill`
 
 **Require:**
@@ -1508,7 +1508,7 @@ _None_
 _None_
 
 
-### <a id="symfony_polyfill-intl-icu"></a>Polyfill `symfony/polyfill-intl-icu`
+### <a id="symfony_polyfill-intl-icu"></a>Polyfill `symfony/polyfill-intl-icu` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-intl-icu)
 **Type:** `polyfill`
 
 **Require:**
@@ -1533,7 +1533,7 @@ _None_
 _None_
 
 
-### <a id="symfony_polyfill-intl-idn"></a>Polyfill `symfony/polyfill-intl-idn`
+### <a id="symfony_polyfill-intl-idn"></a>Polyfill `symfony/polyfill-intl-idn` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-intl-idn)
 **Type:** `polyfill`
 
 **Require:**
@@ -1588,7 +1588,7 @@ _None_
 - `IDNA_ERROR_CONTEXTJ`
 
 
-### <a id="symfony_polyfill-intl-messageformatter"></a>Polyfill `symfony/polyfill-intl-messageformatter`
+### <a id="symfony_polyfill-intl-messageformatter"></a>Polyfill `symfony/polyfill-intl-messageformatter` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-intl-messageformatter)
 **Type:** `polyfill`
 
 **Require:**
@@ -1607,7 +1607,7 @@ _None_
 _None_
 
 
-### <a id="symfony_polyfill-intl-normalizer"></a>Polyfill `symfony/polyfill-intl-normalizer`
+### <a id="symfony_polyfill-intl-normalizer"></a>Polyfill `symfony/polyfill-intl-normalizer` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-intl-normalizer)
 **Type:** `polyfill`
 
 **Require:**
@@ -1626,7 +1626,7 @@ _None_
 _None_
 
 
-### <a id="symfony_polyfill-mbstring"></a>Polyfill `symfony/polyfill-mbstring`
+### <a id="symfony_polyfill-mbstring"></a>Polyfill `symfony/polyfill-mbstring` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-mbstring)
 **Type:** `polyfill`
 
 **Require:**
@@ -1681,7 +1681,7 @@ _None_
 _None_
 
 
-### <a id="symfony_polyfill-php54"></a>Polyfill `symfony/polyfill-php54`
+### <a id="symfony_polyfill-php54"></a>Polyfill `symfony/polyfill-php54` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-php54)
 **Type:** `polyfill`
 
 **Require:**
@@ -1703,7 +1703,7 @@ _None_
 _None_
 
 
-### <a id="symfony_polyfill-php55"></a>Polyfill `symfony/polyfill-php55`
+### <a id="symfony_polyfill-php55"></a>Polyfill `symfony/polyfill-php55` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-php55)
 **Type:** `polyfill`
 
 **Require:**
@@ -1731,7 +1731,7 @@ _None_
 - `PASSWORD_BCRYPT_DEFAULT_COST`
 
 
-### <a id="symfony_polyfill-php56"></a>Polyfill `symfony/polyfill-php56`
+### <a id="symfony_polyfill-php56"></a>Polyfill `symfony/polyfill-php56` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-php56)
 **Type:** `polyfill`
 
 **Require:**
@@ -1754,7 +1754,7 @@ _None_
 _None_
 
 
-### <a id="symfony_polyfill-php70"></a>Polyfill `symfony/polyfill-php70`
+### <a id="symfony_polyfill-php70"></a>Polyfill `symfony/polyfill-php70` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-php70)
 **Type:** `polyfill`
 
 **Require:**
@@ -1783,7 +1783,7 @@ _None_
 - `PHP_INT_MIN`
 
 
-### <a id="symfony_polyfill-php71"></a>Polyfill `symfony/polyfill-php71`
+### <a id="symfony_polyfill-php71"></a>Polyfill `symfony/polyfill-php71` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-php71)
 **Type:** `polyfill`
 
 **Require:**
@@ -1802,7 +1802,7 @@ _None_
 _None_
 
 
-### <a id="symfony_polyfill-php72"></a>Polyfill `symfony/polyfill-php72`
+### <a id="symfony_polyfill-php72"></a>Polyfill `symfony/polyfill-php72` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-php72)
 **Type:** `polyfill`
 
 **Require:**
@@ -1825,7 +1825,7 @@ _None_
 - `PHP_OS_FAMILY`
 
 
-### <a id="symfony_polyfill-php73"></a>Polyfill `symfony/polyfill-php73`
+### <a id="symfony_polyfill-php73"></a>Polyfill `symfony/polyfill-php73` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-php73)
 **Type:** `polyfill`
 
 **Require:**
@@ -1847,7 +1847,7 @@ _None_
 _None_
 
 
-### <a id="voku_portable-utf8"></a>Polyfill `voku/portable-utf8`
+### <a id="voku_portable-utf8"></a>Polyfill `voku/portable-utf8` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/voku/portable-utf8)
 **Type:** `polyfill`
 
 **Require:**
@@ -1933,7 +1933,7 @@ _None_
 - `ICONV_MIME_DECODE_CONTINUE_ON_ERROR`
 
 
-### <a id="wizacha_new-relic-polyfill"></a>Polyfill `wizacha/new-relic-polyfill`
+### <a id="wizacha_new-relic-polyfill"></a>Polyfill `wizacha/new-relic-polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/wizacha/new-relic-polyfill)
 **Type:** `stub`
 
 **Require:**
@@ -1970,7 +1970,7 @@ _None_
 _None_
 
 
-### <a id="wizaplace_sqreen-polyfill"></a>Polyfill `wizaplace/sqreen-polyfill`
+### <a id="wizaplace_sqreen-polyfill"></a>Polyfill `wizaplace/sqreen-polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/wizaplace/sqreen-polyfill)
 **Type:** `stub`
 
 **Require:**
@@ -1991,7 +1991,7 @@ _None_
 _None_
 
 
-### <a id="wyrihaximus_msgpack"></a>Polyfill `wyrihaximus/msgpack`
+### <a id="wyrihaximus_msgpack"></a>Polyfill `wyrihaximus/msgpack` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/wyrihaximus/msgpack)
 **Type:** `polyfill`
 
 **Require:**
@@ -2011,7 +2011,7 @@ _None_
 _None_
 
 
-### <a id="yuloh_bccomp-polyfill"></a>Polyfill `yuloh/bccomp-polyfill`
+### <a id="yuloh_bccomp-polyfill"></a>Polyfill `yuloh/bccomp-polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/yuloh/bccomp-polyfill)
 **Type:** `polyfill`
 
 **Require:**

@@ -32,6 +32,7 @@ format_registry: resources/registry.json
 		> resources/.tmp.registry.json
 	@rm resources/registry.json
 	@mv resources/.tmp.registry.json resources/registry.json
+	@echo Polyfill registry formated!
 
 generate_all:      ## Generate all automatic files
 generate_all: format_registry render_list
@@ -43,9 +44,9 @@ qa_ut: build
 # Files generation targets
 #---------------------------
 
-COMPOSER=docker run -it --rm --user $(USER) --volume $(PWD):/app composer
+COMPOSER=docker run -it --rm --user $(USER) --volume $(PWD):/app --volume ~/.composer:/tmp composer
 JINJA2=docker run -i --rm --volume $(PWD)/resources/template:/data -e TEMPLATE=LIST.md.j2 solocal/jinja2
-PHPQA=docker run -it --rm --user $(USER) --volume $(PWD):/app -w /app zdenekdrahos/phpqa:v1.19.0
+PHPQA=docker run -it --rm --volume $(PWD):/app -w /app --user $(USER) polyfill-registry-phpqa
 
 vendor: composer.json
 	$(COMPOSER) install
@@ -53,13 +54,17 @@ vendor: composer.json
 LIST.md: resources/registry.json resources/template/LIST.md.j2
 	@{ echo '{"var":'; cat resources/registry.json; echo "}"; } \
 		| xargs --null -I % $(JINJA2) % > LIST.md
+	@echo LIST.md updated!
 
-build: vendor lib/*
-	$(PHPQA) php vendor/bin/phpqa --buildDir=build/ --tools=phpcs:0,phpmd:0,phpstan:0,psalm:0,parallel-lint:0,phpunit:0,phpmetrics,phploc,phpcpd:0 --analyzedDirs=lib/ --report
+build: .docker/phpqa/Dockerfile lib/*
+	$(PHPQA) /composer/vendor/bin/phpqa --buildDir=build/ --tools=phpcs:0,phpmd:0,phpstan:0,psalm:0,parallel-lint:0,phpunit:0,phpmetrics,phploc,phpcpd:0 --analyzedDirs=lib/ --report
 
 #
 # Utilities
 #----------------------------
+
+.docker/phpqa/Dockerfile:
+	docker build -t polyfill-registry-phpqa .docker/phpqa/
 
 help:
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'

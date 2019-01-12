@@ -37,7 +37,7 @@ class PolyfillEntry implements EntryInterface
      */
     private function getValue($path, $default)
     {
-        if (!is_array($this->jsonData) || !array_key_exists($path, $this->jsonData)) {
+        if (!array_key_exists($path, $this->jsonData)) {
             return $default;
         }
 
@@ -49,7 +49,7 @@ class PolyfillEntry implements EntryInterface
      *
      * @return void
      */
-    public function parseData($jsonArray)
+    public function parseData(array $jsonArray)
     {
         $this->jsonData = $jsonArray;
     }

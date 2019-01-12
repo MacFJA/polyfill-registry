@@ -10,8 +10,8 @@ namespace MacFJA\PolyFillRegistry;
  */
 class PolyfillRegistry implements ReaderInterface, ReverseSearchInterface
 {
-    /** @var array */
-    private $registry = array();
+    /** @var array|null */
+    private $registry;
 
     public function getPolyfillForExtension($name)
     {
@@ -83,7 +83,7 @@ class PolyfillRegistry implements ReaderInterface, ReverseSearchInterface
 
     /**
      * @param string $file
-     * @return array|mixed
+     * @return array
      * @codeCoverageIgnore
      */
     private function getJson($file)
@@ -111,6 +111,7 @@ class PolyfillRegistry implements ReaderInterface, ReverseSearchInterface
     {
         if ($this->registry === null) {
             $this->setRegistry(__DIR__.'/../resources/registry.json');
+            /** @var array $this->registry */
         }
         return $this->registry;
     }
