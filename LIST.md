@@ -4,6 +4,7 @@
 
 | Name | Type | Replace |
 |------|------|---------|
+| [`adhocore/php-polyfills`](#adhocore_php-polyfills) | **polyfill** | php |
 | [`appserver-io/pthreads-polyfill`](#appserver-io_pthreads-polyfill) | **polyfill** | ext-pthreads |
 | [`ayesh/is_countable-polyfill`](#ayesh_is_countable-polyfill) | **polyfill** | php |
 | [`byjg/phpthread`](#byjg_phpthread) | alternative | ext-pthreads, ext-pcntl |
@@ -13,6 +14,7 @@
 | [`ircmaxell/password-compat`](#ircmaxell_password-compat) | **polyfill** |  |
 | [`jakeasmith/http_build_url`](#jakeasmith_http_build_url) | **polyfill** | pecl_http |
 | [`jesseschalken/date-time-immutable-polyfill`](#jesseschalken_date-time-immutable-polyfill) | **polyfill** | php |
+| [`kirra/polyfill-translit`](#kirra_polyfill-translit) | **polyfill** | pecl-translit |
 | [`krakjoe/pthreads-polyfill`](#krakjoe_pthreads-polyfill) | **polyfill** | ext-pthreads |
 | [`lavoiesl/apc-polyfill`](#lavoiesl_apc-polyfill) | alternative | ext-apc |
 | [`lavoiesl/apc-polyfill`](#lavoiesl_apc-polyfill) | alternative | ext-apc |
@@ -23,6 +25,7 @@
 | [`paragonie/sodium_compat`](#paragonie_sodium_compat) | **polyfill** | ext-sodium, ext-libsodium |
 | [`php-ds/php-ds`](#php-ds_php-ds) | **polyfill** | ext-ds |
 | [`phpseclib/mcrypt_compat`](#phpseclib_mcrypt_compat) | **polyfill** | ext-mcrypt |
+| [`positibe/polyfill-apc-php70`](#positibe_polyfill-apc-php70) | **polyfill** | ext-apc |
 | [`ralouphie/getallheaders`](#ralouphie_getallheaders) | **polyfill** |  |
 | [`sarciszewski/php-future`](#sarciszewski_php-future) | **polyfill** | php |
 | [`symfony/intl`](#symfony_intl) | **polyfill** | ext-intl |
@@ -43,6 +46,7 @@
 | [`symfony/polyfill-php71`](#symfony_polyfill-php71) | **polyfill** | php |
 | [`symfony/polyfill-php72`](#symfony_polyfill-php72) | **polyfill** | php |
 | [`symfony/polyfill-php73`](#symfony_polyfill-php73) | **polyfill** | php |
+| [`tea/future`](#tea_future) | **polyfill** | php |
 | [`voku/portable-utf8`](#voku_portable-utf8) | **polyfill** | php, ext-iconv, ext-mbstring, ext-intl |
 | [`wizacha/new-relic-polyfill`](#wizacha_new-relic-polyfill) | _stub_ | ext-newrelic |
 | [`wizaplace/sqreen-polyfill`](#wizaplace_sqreen-polyfill) | _stub_ | ext-sqreen |
@@ -58,6 +62,27 @@ There 3 types of polyfill:
  - **`alternative`**, it's your choice: You have to manually activate the code
 
 ## Details
+
+
+### <a id="adhocore_php-polyfills"></a>Polyfill `adhocore/php-polyfills` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/adhocore/php-polyfills)
+**Type:** `polyfill`
+
+**Require:**
+_None_
+
+**Replace:**
+- `php`, version __5.4 &amp;&amp; 5.5__
+
+**Functions:**
+- `array_column`
+- `hex2bin`
+- `http_response_code`
+
+**Classes:**
+_None_
+
+**Constants:**
+_None_
 
 
 ### <a id="appserver-io_pthreads-polyfill"></a>Polyfill `appserver-io/pthreads-polyfill` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/appserver-io/pthreads-polyfill)
@@ -457,6 +482,26 @@ _None_
 **Classes:**
 - `DateTimeInterface`
 - `DateTimeImmutable`
+
+**Constants:**
+_None_
+
+
+### <a id="kirra_polyfill-translit"></a>Polyfill `kirra/polyfill-translit` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/kirra/polyfill-translit)
+**Type:** `polyfill`
+
+**Require:**
+- `php`, version __5.5.9__
+
+**Replace:**
+- `pecl-translit`, version __*__
+
+**Functions:**
+- `transliterate_filters_get`
+- `transliterate`
+
+**Classes:**
+_None_
 
 **Constants:**
 _None_
@@ -1126,6 +1171,36 @@ _None_
 - `MCRYPT_TWOFISH`
 - `MCRYPT_WAKE`
 - `MCRYPT_XTEA`
+
+
+### <a id="positibe_polyfill-apc-php70"></a>Polyfill `positibe/polyfill-apc-php70` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/positibe/polyfill-apc-php70)
+**Type:** `polyfill`
+
+**Require:**
+- `php`, version __7.0__
+- `ext-apcu`, version __*__
+
+**Replace:**
+- `ext-apc`, version __*__
+
+**Functions:**
+- `apc_add`
+- `apc_cache_info`
+- `apc_cas`
+- `apc_clear_cache`
+- `apc_dec`
+- `apc_delete`
+- `apc_exists`
+- `apc_fetch`
+- `apc_inc`
+- `apc_sma_info`
+- `apc_store`
+
+**Classes:**
+- `APCIterator`
+
+**Constants:**
+_None_
 
 
 ### <a id="ralouphie_getallheaders"></a>Polyfill `ralouphie/getallheaders` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/ralouphie/getallheaders)
@@ -1845,6 +1920,56 @@ _None_
 
 **Constants:**
 _None_
+
+
+### <a id="tea_future"></a>Polyfill `tea/future` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/tea/future)
+**Type:** `polyfill`
+
+**Require:**
+- `php`, version __5.3.3__
+
+**Replace:**
+- `php`, version __5.4 &amp;&amp; 5.5 &amp;&amp; 5.6 &amp;&amp; 7.0 &amp;&amp; 7.1__
+
+**Functions:**
+- `trait_exists`
+- `class_uses`
+- `hex2bin`
+- `session_register_shutdown`
+- `boolval`
+- `json_last_error_msg`
+- `array_column`
+- `hash_pbkdf2`
+- `password_hash`
+- `password_get_info`
+- `password_needs_rehash`
+- `password_verify`
+- `hash_equals`
+- `ldap_escape`
+- `gzopen`
+- `gzseek`
+- `gztell`
+- `intdiv`
+- `preg_replace_callback_array`
+- `error_clear_last`
+- `random_bytes`
+- `random_int`
+- `is_iterable`
+
+**Classes:**
+- `SessionUpdateTimestampHandlerInterface`
+- `ArithmeticError`
+- `AssertionError`
+- `DivisionByZeroError`
+- `Error`
+- `ParseError`
+- `TypeError`
+
+**Constants:**
+- `PASSWORD_BCRYPT`
+- `PASSWORD_DEFAULT`
+- `PASSWORD_BCRYPT_DEFAULT_COST`
+- `PHP_INT_MIN`
 
 
 ### <a id="voku_portable-utf8"></a>Polyfill `voku/portable-utf8` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/voku/portable-utf8)

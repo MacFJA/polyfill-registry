@@ -1,8 +1,23 @@
 [
   {
+    "name": "adhocore/php-polyfills",
+    "type": "polyfill",
+    "require": [],
+    "replace": {
+      "php": "5.4 && 5.5"
+    },
+    "functions": [
+      "array_column",
+      "hex2bin",
+      "http_response_code"
+    ],
+    "classes": [],
+    "constants": []
+  },
+  {
     "name": "appserver-io/pthreads-polyfill",
     "type": "polyfill",
-    "require": {},
+    "require": [],
     "replace": {
       "ext-pthreads": "*"
     },
@@ -54,7 +69,7 @@
     "require": {
       "php": "5.3.9"
     },
-    "replace": {},
+    "replace": [],
     "functions": [],
     "classes": [],
     "constants": []
@@ -116,7 +131,7 @@
   {
     "name": "fisharebest/php-polyfill",
     "type": "polyfill",
-    "require": {},
+    "require": [],
     "replace": {
       "ext-apcu": "*",
       "php": "5.4.* || 5.5.* || 5.6.* || 7.0.*",
@@ -306,7 +321,7 @@
     "require": {
       "php": "5.3.7"
     },
-    "replace": {},
+    "replace": [],
     "functions": [
       "password_hash",
       "password_get_info",
@@ -323,7 +338,7 @@
   {
     "name": "jakeasmith/http_build_url",
     "type": "polyfill",
-    "require": {},
+    "require": [],
     "replace": {
       "pecl_http": "*"
     },
@@ -348,7 +363,7 @@
   {
     "name": "jesseschalken/date-time-immutable-polyfill",
     "type": "polyfill",
-    "require": {},
+    "require": [],
     "replace": {
       "php": "5.*"
     },
@@ -360,9 +375,25 @@
     "constants": []
   },
   {
+    "name": "kirra/polyfill-translit",
+    "type": "polyfill",
+    "require": {
+      "php": "5.5.9"
+    },
+    "replace": {
+      "pecl-translit": "*"
+    },
+    "functions": [
+      "transliterate_filters_get",
+      "transliterate"
+    ],
+    "classes": [],
+    "constants": []
+  },
+  {
     "name": "krakjoe/pthreads-polyfill",
     "type": "polyfill",
-    "require": {},
+    "require": [],
     "replace": {
       "ext-pthreads": "*"
     },
@@ -547,7 +578,7 @@
   {
     "name": "mongofill/mongofill",
     "type": "polyfill",
-    "require": {},
+    "require": [],
     "replace": {
       "ext-mongo": "*"
     },
@@ -590,7 +621,7 @@
   {
     "name": "ovr/newrelic-polyfill",
     "type": "stub",
-    "require": {},
+    "require": [],
     "replace": {
       "ext-newrelic": "*"
     },
@@ -622,7 +653,7 @@
     "require": {
       "php": "5.2"
     },
-    "replace": {},
+    "replace": [],
     "functions": [
       "random_bytes",
       "random_int"
@@ -639,7 +670,7 @@
   {
     "name": "paragonie/sodium_compat",
     "type": "polyfill",
-    "require": {},
+    "require": [],
     "replace": {
       "ext-sodium": "*",
       "ext-libsodium": "*"
@@ -988,12 +1019,40 @@
     ]
   },
   {
+    "name": "positibe/polyfill-apc-php70",
+    "type": "polyfill",
+    "require": {
+      "php": "7.0",
+      "ext-apcu": "*"
+    },
+    "replace": {
+      "ext-apc": "*"
+    },
+    "functions": [
+      "apc_add",
+      "apc_cache_info",
+      "apc_cas",
+      "apc_clear_cache",
+      "apc_dec",
+      "apc_delete",
+      "apc_exists",
+      "apc_fetch",
+      "apc_inc",
+      "apc_sma_info",
+      "apc_store"
+    ],
+    "classes": [
+      "APCIterator"
+    ],
+    "constants": []
+  },
+  {
     "name": "ralouphie/getallheaders",
     "type": "polyfill",
     "require": {
       "php": "5.3"
     },
-    "replace": {},
+    "replace": [],
     "functions": [
       "getallheaders"
     ],
@@ -1647,6 +1706,56 @@
     "constants": []
   },
   {
+    "name": "tea/future",
+    "type": "polyfill",
+    "require": {
+      "php": "5.3.3"
+    },
+    "replace": {
+      "php": "5.4 && 5.5 && 5.6 && 7.0 && 7.1"
+    },
+    "functions": [
+      "trait_exists",
+      "class_uses",
+      "hex2bin",
+      "session_register_shutdown",
+      "boolval",
+      "json_last_error_msg",
+      "array_column",
+      "hash_pbkdf2",
+      "password_hash",
+      "password_get_info",
+      "password_needs_rehash",
+      "password_verify",
+      "hash_equals",
+      "ldap_escape",
+      "gzopen",
+      "gzseek",
+      "gztell",
+      "intdiv",
+      "preg_replace_callback_array",
+      "error_clear_last",
+      "random_bytes",
+      "random_int",
+      "is_iterable"
+    ],
+    "classes": [
+      "SessionUpdateTimestampHandlerInterface",
+      "ArithmeticError",
+      "AssertionError",
+      "DivisionByZeroError",
+      "Error",
+      "ParseError",
+      "TypeError"
+    ],
+    "constants": [
+      "PASSWORD_BCRYPT",
+      "PASSWORD_DEFAULT",
+      "PASSWORD_BCRYPT_DEFAULT_COST",
+      "PHP_INT_MIN"
+    ]
+  },
+  {
     "name": "voku/portable-utf8",
     "type": "polyfill",
     "require": {
@@ -1735,7 +1844,7 @@
   {
     "name": "wizacha/new-relic-polyfill",
     "type": "stub",
-    "require": {},
+    "require": [],
     "replace": {
       "ext-newrelic": "*"
     },
@@ -1766,7 +1875,7 @@
   {
     "name": "wizaplace/sqreen-polyfill",
     "type": "stub",
-    "require": {},
+    "require": [],
     "replace": {
       "ext-sqreen": "*"
     },
@@ -1797,7 +1906,7 @@
   {
     "name": "yuloh/bccomp-polyfill",
     "type": "polyfill",
-    "require": {},
+    "require": [],
     "replace": {
       "ext-bcmath": "*"
     },
