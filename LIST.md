@@ -7,7 +7,11 @@
 | [`adhocore/php-polyfills`](#adhocore_php-polyfills) | **polyfill** | php |
 | [`appserver-io/pthreads-polyfill`](#appserver-io_pthreads-polyfill) | **polyfill** | ext-pthreads |
 | [`ayesh/is_countable-polyfill`](#ayesh_is_countable-polyfill) | **polyfill** | php |
+| [`bbrala/php7-ereg-shim`](#bbrala_php7-ereg-shim) | **polyfill** | php |
+| [`brunodebarros/polyfill-mysqli`](#brunodebarros_polyfill-mysqli) | **polyfill** | ext-mysqli |
 | [`byjg/phpthread`](#byjg_phpthread) | alternative | ext-pthreads, ext-pcntl |
+| [`derrabus/ereg-shim`](#derrabus_ereg-shim) | **polyfill** | php |
+| [`dshafik/php7-mysql-shim`](#dshafik_php7-mysql-shim) | **polyfill** | ext-mysql |
 | [`ducks-project/apache`](#ducks-project_apache) | alternative |  |
 | [`fisharebest/ext-calendar`](#fisharebest_ext-calendar) | **polyfill** | ext-calendar |
 | [`fisharebest/php-polyfill`](#fisharebest_php-polyfill) | **polyfill** | ext-apcu, php, ext-iconv, ext-intl, ext-mbstring, ext-calendar, pecl-http |
@@ -18,6 +22,7 @@
 | [`krakjoe/pthreads-polyfill`](#krakjoe_pthreads-polyfill) | **polyfill** | ext-pthreads |
 | [`lavoiesl/apc-polyfill`](#lavoiesl_apc-polyfill) | alternative | ext-apc |
 | [`lavoiesl/apc-polyfill`](#lavoiesl_apc-polyfill) | alternative | ext-apc |
+| [`mmeyer2k/retro`](#mmeyer2k_retro) | **polyfill** | php |
 | [`mollie/polyfill-libsodium`](#mollie_polyfill-libsodium) | **polyfill** | ext-sodium |
 | [`mongofill/mongofill`](#mongofill_mongofill) | **polyfill** | ext-mongo |
 | [`ovr/newrelic-polyfill`](#ovr_newrelic-polyfill) | _stub_ | ext-newrelic |
@@ -28,6 +33,7 @@
 | [`positibe/polyfill-apc-php70`](#positibe_polyfill-apc-php70) | **polyfill** | ext-apc |
 | [`ralouphie/getallheaders`](#ralouphie_getallheaders) | **polyfill** |  |
 | [`sarciszewski/php-future`](#sarciszewski_php-future) | **polyfill** | php |
+| [`src-run/augustus-polyfill-library`](#src-run_augustus-polyfill-library) | **polyfill** | ext-mbstring, ext-intl, ext-iconv, ext-apcu, ext-ctype, php |
 | [`symfony/intl`](#symfony_intl) | **polyfill** | ext-intl |
 | [`symfony/polyfill`](#symfony_polyfill) | **polyfill** | ext-mbstring, ext-intl, ext-iconv, php, ext-apcu, ext-ctype |
 | [`symfony/polyfill-apcu`](#symfony_polyfill-apcu) | **polyfill** | ext-apcu |
@@ -130,6 +136,51 @@ _None_
 _None_
 
 
+### <a id="bbrala_php7-ereg-shim"></a>Polyfill `bbrala/php7-ereg-shim` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/bbrala/php7-ereg-shim)
+**Type:** `polyfill`
+
+**Require:**
+_None_
+
+**Replace:**
+- `php`, version __4 &amp;&amp; 5__
+
+**Functions:**
+- `ereg`
+- `eregi`
+- `ereg_replace`
+- `eregi_replace`
+- `split`
+- `spliti`
+
+**Classes:**
+_None_
+
+**Constants:**
+_None_
+
+
+### <a id="brunodebarros_polyfill-mysqli"></a>Polyfill `brunodebarros/polyfill-mysqli` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/brunodebarros/polyfill-mysqli)
+**Type:** `polyfill`
+
+**Require:**
+- `php`, version __5.3.3__
+- `ext-mysql`, version __*__
+
+**Replace:**
+- `ext-mysqli`, version __*__
+
+**Functions:**
+_None_
+
+**Classes:**
+- `mysqli`
+- `mysqli_result`
+
+**Constants:**
+_None_
+
+
 ### <a id="byjg_phpthread"></a>Polyfill `byjg/phpthread` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/byjg/phpthread)
 **Type:** `alternative`
 
@@ -148,6 +199,115 @@ _None_
 
 **Constants:**
 _None_
+
+
+### <a id="derrabus_ereg-shim"></a>Polyfill `derrabus/ereg-shim` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/derrabus/ereg-shim)
+**Type:** `polyfill`
+
+**Require:**
+- `php`, version __5.3 || 7.0__
+
+**Replace:**
+- `php`, version __4 &amp;&amp; 5__
+
+**Functions:**
+- `ereg`
+- `eregi`
+- `ereg_replace`
+- `eregi_replace`
+- `split`
+- `spliti`
+
+**Classes:**
+_None_
+
+**Constants:**
+_None_
+
+
+### <a id="dshafik_php7-mysql-shim"></a>Polyfill `dshafik/php7-mysql-shim` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/dshafik/php7-mysql-shim)
+**Type:** `polyfill`
+
+**Require:**
+- `php`, version __5.3.6__
+- `ext-mysqli`, version __*__
+
+**Replace:**
+- `ext-mysql`, version __*__
+
+**Functions:**
+- `mysql_connect`
+- `mysql_pconnect`
+- `mysql_close`
+- `mysql_select_db`
+- `mysql_query`
+- `mysql_unbuffered_query`
+- `mysql_db_query`
+- `mysql_list_dbs`
+- `mysql_list_tables`
+- `mysql_list_fields`
+- `mysql_list_processes`
+- `mysql_error`
+- `mysql_errno`
+- `mysql_affected_rows`
+- `mysql_insert_id`
+- `mysql_result`
+- `mysql_num_rows`
+- `mysql_num_fields`
+- `mysql_fetch_row`
+- `mysql_fetch_array`
+- `mysql_fetch_assoc`
+- `mysql_fetch_object`
+- `mysql_data_seek`
+- `mysql_fetch_lengths`
+- `mysql_fetch_field`
+- `mysql_field_seek`
+- `mysql_free_result`
+- `mysql_field_name`
+- `mysql_field_table`
+- `mysql_field_len`
+- `mysql_field_type`
+- `mysql_field_flags`
+- `mysql_escape_string`
+- `mysql_real_escape_string`
+- `mysql_stat`
+- `mysql_thread_id`
+- `mysql_client_encoding`
+- `mysql_ping`
+- `mysql_get_client_info`
+- `mysql_get_host_info`
+- `mysql_get_proto_info`
+- `mysql_get_server_info`
+- `mysql_info`
+- `mysql_set_charset`
+- `mysql_db_name`
+- `mysql_tablename`
+- `mysql_fieldname`
+- `mysql_fieldtable`
+- `mysql_fieldlen`
+- `mysql_fieldtype`
+- `mysql_fieldflags`
+- `mysql_selectdb`
+- `mysql_freeresult`
+- `mysql_numfields`
+- `mysql_numrows`
+- `mysql_listdbs`
+- `mysql_listtables`
+- `mysql_listfields`
+- `mysql_dbname`
+- `mysql_table_name`
+
+**Classes:**
+_None_
+
+**Constants:**
+- `MYSQL_ASSOC`
+- `MYSQL_NUM`
+- `MYSQL_BOTH`
+- `MYSQL_CLIENT_COMPRESS`
+- `MYSQL_CLIENT_SSL`
+- `MYSQL_CLIENT_INTERACTIVE`
+- `MYSQL_CLIENT_IGNORE_SPACE`
 
 
 ### <a id="ducks-project_apache"></a>Polyfill `ducks-project/apache` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/ducks-project/apache)
@@ -571,6 +731,26 @@ _None_
 - `apc_inc`
 - `apc_sma_info`
 - `apc_store`
+
+**Classes:**
+_None_
+
+**Constants:**
+_None_
+
+
+### <a id="mmeyer2k_retro"></a>Polyfill `mmeyer2k/retro` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/mmeyer2k/retro)
+**Type:** `polyfill`
+
+**Require:**
+_None_
+
+**Replace:**
+- `php`, version __5.4 &amp;&amp; 5.5__
+
+**Functions:**
+- `hex2bin`
+- `array_column`
 
 **Classes:**
 _None_
@@ -1246,6 +1426,205 @@ _None_
 
 **Constants:**
 _None_
+
+
+### <a id="src-run_augustus-polyfill-library"></a>Polyfill `src-run/augustus-polyfill-library` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/src-run/augustus-polyfill-library)
+**Type:** `polyfill`
+
+**Require:**
+- `php`, version __7.0__
+
+**Replace:**
+- `ext-mbstring`, version __*__
+- `ext-intl`, version __*__
+- `ext-iconv`, version __*__
+- `ext-apcu`, version __*__
+- `ext-ctype`, version __*__
+- `php`, version __7.1 &amp;&amp; 7.2__
+
+**Functions:**
+- `apcu_add`
+- `apcu_delete`
+- `apcu_exists`
+- `apcu_fetch`
+- `apcu_store`
+- `apcu_cache_info`
+- `apcu_cas`
+- `apcu_clear_cache`
+- `apcu_dec`
+- `apcu_inc`
+- `apcu_sma_info`
+- `trait_exists`
+- `class_uses`
+- `hex2bin`
+- `session_register_shutdown`
+- `boolval`
+- `json_last_error_msg`
+- `array_column`
+- `hash_pbkdf2`
+- `password_hash`
+- `password_get_info`
+- `password_needs_rehash`
+- `password_verify`
+- `hash_equals`
+- `ldap_escape`
+- `gzopen`
+- `gzseek`
+- `gztell`
+- `intdiv`
+- `preg_replace_callback_array`
+- `error_clear_last`
+- `random_bytes`
+- `random_int`
+- `is_iterable`
+- `spl_object_id`
+- `stream_isatty`
+- `sapi_windows_vt100_support`
+- `utf8_encode`
+- `utf8_decode`
+- `iconv`
+- `iconv_get_encoding`
+- `iconv_set_encoding`
+- `iconv_mime_encode`
+- `iconv_mime_decode_headers`
+- `iconv_strlen`
+- `iconv_strpos`
+- `iconv_strrpos`
+- `iconv_substr`
+- `iconv_mime_decode`
+- `grapheme_extract`
+- `grapheme_stripos`
+- `grapheme_stristr`
+- `grapheme_strlen`
+- `grapheme_strpos`
+- `grapheme_strripos`
+- `grapheme_strrpos`
+- `grapheme_strstr`
+- `grapheme_substr`
+- `intl_is_failure`
+- `intl_get_error_code`
+- `intl_get_error_message`
+- `intl_error_name`
+- `mb_convert_encoding`
+- `mb_decode_mimeheader`
+- `mb_encode_mimeheader`
+- `mb_decode_numericentity`
+- `mb_encode_numericentity`
+- `mb_convert_case`
+- `mb_internal_encoding`
+- `mb_language`
+- `mb_list_encodings`
+- `mb_encoding_aliases`
+- `mb_check_encoding`
+- `mb_detect_encoding`
+- `mb_detect_order`
+- `mb_parse_str`
+- `mb_strlen`
+- `mb_strpos`
+- `mb_strtolower`
+- `mb_strtoupper`
+- `mb_substitute_character`
+- `mb_substr`
+- `mb_stripos`
+- `mb_stristr`
+- `mb_strrchr`
+- `mb_strrichr`
+- `mb_strripos`
+- `mb_strrpos`
+- `mb_strstr`
+- `mb_get_info`
+- `mb_http_output`
+- `mb_strwidth`
+- `mb_substr_count`
+- `mb_output_handler`
+- `mb_http_input`
+- `mb_convert_variables`
+- `mb_ord`
+- `mb_chr`
+- `mb_scrub`
+- `ctype_alnum`
+- `ctype_alpha`
+- `ctype_cntrl`
+- `ctype_digit`
+- `ctype_graph`
+- `ctype_lower`
+- `ctype_print`
+- `ctype_punct`
+- `ctype_space`
+- `ctype_upper`
+- `ctype_xdigit`
+- `is_countable`
+- `hrtime`
+- `array_key_first`
+- `array_key_last`
+- `msgfmt_format_message`
+- `idn_to_ascii`
+- `idn_to_utf8`
+
+**Classes:**
+- `APCUIterator`
+- `SessionUpdateTimestampHandlerInterface`
+- `ArithmeticError`
+- `AssertionError`
+- `DivisionByZeroError`
+- `Error`
+- `ParseError`
+- `TypeError`
+- `Collator`
+- `NumberFormatter`
+- `Locale`
+- `IntlDateFormatter`
+- `Normalizer`
+- `Throwable`
+
+**Constants:**
+- `PASSWORD_BCRYPT`
+- `PASSWORD_DEFAULT`
+- `PASSWORD_BCRYPT_DEFAULT_COST`
+- `PHP_INT_MIN`
+- `PHP_OS_FAMILY`
+- `ICONV_IMPL`
+- `ICONV_VERSION`
+- `ICONV_MIME_DECODE_STRICT`
+- `ICONV_MIME_DECODE_CONTINUE_ON_ERROR`
+- `U_IDNA_PROHIBITED_ERROR`
+- `U_IDNA_ERROR_START`
+- `U_IDNA_UNASSIGNED_ERROR`
+- `U_IDNA_CHECK_BIDI_ERROR`
+- `U_IDNA_STD3_ASCII_RULES_ERROR`
+- `U_IDNA_ACE_PREFIX_ERROR`
+- `U_IDNA_VERIFICATION_ERROR`
+- `U_IDNA_LABEL_TOO_LONG_ERROR`
+- `U_IDNA_ZERO_LENGTH_LABEL_ERROR`
+- `U_IDNA_DOMAIN_NAME_TOO_LONG_ERROR`
+- `U_IDNA_ERROR_LIMIT`
+- `U_STRINGPREP_PROHIBITED_ERROR`
+- `U_STRINGPREP_UNASSIGNED_ERROR`
+- `U_STRINGPREP_CHECK_BIDI_ERROR`
+- `IDNA_DEFAULT`
+- `IDNA_ALLOW_UNASSIGNED`
+- `IDNA_USE_STD3_RULES`
+- `IDNA_CHECK_BIDI`
+- `IDNA_CHECK_CONTEXTJ`
+- `IDNA_NONTRANSITIONAL_TO_ASCII`
+- `IDNA_NONTRANSITIONAL_TO_UNICODE`
+- `INTL_IDNA_VARIANT_2003`
+- `INTL_IDNA_VARIANT_UTS46`
+- `IDNA_ERROR_EMPTY_LABEL`
+- `IDNA_ERROR_LABEL_TOO_LONG`
+- `IDNA_ERROR_DOMAIN_NAME_TOO_LONG`
+- `IDNA_ERROR_LEADING_HYPHEN`
+- `IDNA_ERROR_TRAILING_HYPHEN`
+- `IDNA_ERROR_HYPHEN_3_4`
+- `IDNA_ERROR_LEADING_COMBINING_MARK`
+- `IDNA_ERROR_DISALLOWED`
+- `IDNA_ERROR_PUNYCODE`
+- `IDNA_ERROR_LABEL_HAS_DOT`
+- `IDNA_ERROR_INVALID_ACE_LABEL`
+- `IDNA_ERROR_BIDI`
+- `IDNA_ERROR_CONTEXTJ`
+- `PHP_VERSION_ID`
+- `RANDOM_COMPAT_READ_BUFFER`
 
 
 ### <a id="symfony_intl"></a>Polyfill `symfony/intl` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/intl)
