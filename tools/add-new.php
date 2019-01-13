@@ -83,7 +83,7 @@ function askList($prompt, $formatter, $validator)
         $items = array_merge($items, array_filter($formatted, $validator));
     } while (!empty($typed));
 
-    return array_unique($items);
+    return $items;
 }
 
 /**
@@ -94,13 +94,13 @@ function askList($prompt, $formatter, $validator)
  */
 function askSpaceCommaList($prompt)
 {
-    return askList(
+    return array_unique(askList(
         $prompt . ' (space separated, comma separated or one per line ; leave empty to continue): ',
         function ($string) {
             return preg_split('/[, ]/', $string);
         },
         'notEmpty'
-    );
+    ));
 }
 
 $name = ask('Name of the polyfill (Often it\'s the composer package name): ', 'notEmpty');
