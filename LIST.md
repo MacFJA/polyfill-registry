@@ -1359,7 +1359,7 @@ _None_
 **Type:** `polyfill`
 
 **Require:**
-  - `php`, version __5.3__
+  - `php`, version __5.3 || 5.6__
 
 **Replace:**
 _None_

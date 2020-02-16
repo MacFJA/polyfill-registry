@@ -1202,7 +1202,7 @@
     "name": "ralouphie/getallheaders",
     "type": "polyfill",
     "require": {
-      "php": "5.3"
+      "php": "5.3 || 5.6"
     },
     "replace": [],
     "functions": [
