@@ -2057,6 +2057,42 @@
     "constants": []
   },
   {
+    "name": "symfony/polyfill-php74",
+    "type": "polyfill",
+    "require": {
+      "php": "5.3"
+    },
+    "replace": {
+      "php": "7.4.*"
+    },
+    "functions": [
+      "get_mangled_object_vars",
+      "password_algos",
+      "mb_str_split"
+    ],
+    "classes": [],
+    "constants": []
+  },
+  {
+    "name": "symfony/polyfill-php80",
+    "type": "polyfill",
+    "require": {
+      "php": "7.0.8"
+    },
+    "replace": {
+      "php": "8.0.*"
+    },
+    "functions": [
+      "fdiv"
+    ],
+    "classes": [
+      "ValueError"
+    ],
+    "constants": [
+      "FILTER_VALIDATE_BOOL"
+    ]
+  },
+  {
     "name": "tea/future",
     "type": "polyfill",
     "require": {
