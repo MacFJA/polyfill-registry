@@ -13,6 +13,7 @@
 | [`derrabus/ereg-shim`](#derrabus_ereg-shim) | **polyfill** | php |
 | [`dshafik/php7-mysql-shim`](#dshafik_php7-mysql-shim) | **polyfill** | ext-mysql |
 | [`ducks-project/apache`](#ducks-project_apache) | alternative |  |
+| [`empi89/php-amqp-stubs`](#empi89_php-amqp-stubs) | _stub_ | ext-amqp |
 | [`fisharebest/ext-calendar`](#fisharebest_ext-calendar) | **polyfill** | ext-calendar |
 | [`fisharebest/php-polyfill`](#fisharebest_php-polyfill) | **polyfill** | ext-apcu, php, ext-iconv, ext-intl, ext-mbstring, ext-calendar, pecl-http |
 | [`ircmaxell/password-compat`](#ircmaxell_password-compat) | **polyfill** |  |
@@ -318,6 +319,52 @@ _None_
 
 **Constants:**
 _None_
+
+### <a id="empi89_php-amqp-stubs"></a>Polyfill `empi89/php-amqp-stubs` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/empi89/php-amqp-stubs)
+**Type:** `stub`
+
+**Require:**
+  - `php`, version __5.1__
+
+**Replace:**
+  - `ext-amqp`, version __*__
+
+**Functions:**
+_None_
+
+**Classes:**
+  - `AMQPChannel`
+  - `AMQPChannelException`
+  - `AMQPConnection`
+  - `AMQPConnectionException`
+  - `AMQPEnvelope`
+  - `AMQPException`
+  - `AMQPExchange`
+  - `AMQPExchangeException`
+  - `AMQPQueue`
+  - `AMQPQueueException`
+
+**Constants:**
+  - `AMQP_NOPARAM`
+  - `AMQP_DURABLE`
+  - `AMQP_PASSIVE`
+  - `AMQP_EXCLUSIVE`
+  - `AMQP_AUTODELETE`
+  - `AMQP_INTERNAL`
+  - `AMQP_NOLOCAL`
+  - `AMQP_AUTOACK`
+  - `AMQP_IFEMPTY`
+  - `AMQP_IFUNUSED`
+  - `AMQP_MANDATORY`
+  - `AMQP_IMMEDIATE`
+  - `AMQP_MULTIPLE`
+  - `AMQP_NOWAIT`
+  - `AMQP_REQUEUE`
+  - `AMQP_EX_TYPE_DIRECT`
+  - `AMQP_EX_TYPE_FANOUT`
+  - `AMQP_EX_TYPE_TOPIC`
+  - `AMQP_EX_TYPE_HEADERS`
+  - `AMQP_OS_SOCKET_TIMEOUT_ERRNO`
 
 ### <a id="fisharebest_ext-calendar"></a>Polyfill `fisharebest/ext-calendar` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/fisharebest/ext-calendar)
 **Type:** `polyfill`
