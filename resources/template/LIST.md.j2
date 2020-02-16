@@ -4,9 +4,9 @@
 
 | Name | Type | Replace |
 |------|------|---------|
-{%- for row in var %}
+{% for row in var %}
 | [`{{ row.name }}`](#{{ row.name|replace('/','_') }}) | {% if row.type == 'polyfill' %}**{{ row.type }}**{% elif row.type == 'stub' %}_{{ row.type }}_{% else %}{{ row.type }}{% endif %} | {{ row.replace|join(', ') }} |
-{%- endfor %}
+{% endfor %}
 
 ## Different type of Polyfill
 
@@ -23,37 +23,42 @@ There 3 types of polyfill:
 **Type:** `{{ row.type }}`
 
 **Require:**
-{% if row.require|length > 0 -%}
-{% for name,version in row.require.items() -%}
+{% if row.require|length > 0 %}
+{% for name,version in row.require.items() %}
   - `{{ name }}`, version __{{ version }}__
-{% endfor -%}
-{% else -%}
+{% endfor %}
+{% else %}
 _None_
 {% endif %}
+
 **Replace:**
-{% if row.replace|length > 0 -%}
-{% for name,version in row.replace.items() -%}
+{% if row.replace|length > 0 %}
+{% for name,version in row.replace.items() %}
   - `{{ name }}`, version __{{ version }}__
-{% endfor -%}
-{% else -%}
+{% endfor %}
+{% else %}
 _None_
 {% endif %}
+
 **Functions:**
-{% for function in row.functions -%}
+{% for function in row.functions %}
   - `{{ function }}`
-{% else -%}
+{% else %}
 _None_
 {% endfor %}
+
 **Classes:**
-{% for class in row.classes -%}
+{% for class in row.classes %}
   - `{{ class }}`
-{% else -%}
+{% else %}
 _None_
 {% endfor %}
+
 **Constants:**
-{% for constant in row.constants -%}
+{% for constant in row.constants %}
   - `{{ constant }}`
-{% else -%}
+{% else %}
 _None_
 {% endfor %}
+
 {% endfor %}
