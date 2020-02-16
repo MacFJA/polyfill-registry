@@ -49,15 +49,16 @@ qa_ut: build
 #---------------------------
 
 COMPOSER=docker run -it --rm --user $(USER) --volume $(PWD):/app --volume ~/.composer:/tmp composer
-JINJA2=docker run -i --rm --volume $(PWD)/resources/template:/data -e TEMPLATE=LIST.md.j2 solocal/jinja2
+JINJA2=docker run -i --rm --volume $(PWD)/resources/template:/data:ro jlesage/render-template data/LIST.md.j2 data/tmp.json
 PHPQA=docker run -it --rm --volume $(PWD):/app -w /app --user $(USER) polyfill-registry-phpqa
 
 vendor: composer.json
-	$(COMPOSER) install
+	$(COMPOSER) install --ignore-platform-reqs
 
 LIST.md: resources/registry.json resources/template/LIST.md.j2
-	@{ echo '{"var":'; cat resources/registry.json; echo "}"; } \
-		| xargs --null -I % $(JINJA2) % > LIST.md
+	@{ echo '{"var":'; cat resources/registry.json; echo "}"; } > resources/template/tmp.json
+	@$(JINJA2) > LIST.md
+	@rm resources/template/tmp.json
 	@echo LIST.md updated!
 
 build: .docker/phpqa/Dockerfile lib/*
