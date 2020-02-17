@@ -2031,7 +2031,10 @@
       "stream_isatty",
       "sapi_windows_vt100_support",
       "utf8_encode",
-      "utf8_decode"
+      "utf8_decode",
+      "mb_ord",
+      "mb_chr",
+      "mb_scrub"
     ],
     "classes": [],
     "constants": [
