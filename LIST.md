@@ -2091,7 +2091,9 @@ _None_
 _None_
 
 **Constants:**
-_None_
+  - `MB_CASE_UPPER`
+  - `MB_CASE_LOWER`
+  - `MB_CASE_TITLE`
 
 ### <a id="symfony_polyfill-php54"></a>Polyfill `symfony/polyfill-php54` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-php54)
 **Type:** `polyfill`
