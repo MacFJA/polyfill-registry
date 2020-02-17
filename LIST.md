@@ -2161,7 +2161,8 @@ _None_
 _None_
 
 **Constants:**
-_None_
+  - `LDAP_ESCAPE_FILTER`
+  - `LDAP_ESCAPE_DN`
 
 ### <a id="symfony_polyfill-php70"></a>Polyfill `symfony/polyfill-php70` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-php70)
 **Type:** `polyfill`

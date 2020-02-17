@@ -1971,7 +1971,10 @@
       "gztell"
     ],
     "classes": [],
-    "constants": []
+    "constants": [
+      "LDAP_ESCAPE_FILTER",
+      "LDAP_ESCAPE_DN"
+    ]
   },
   {
     "name": "symfony/polyfill-php70",
