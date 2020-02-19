@@ -52,6 +52,8 @@
 | [`symfony/polyfill-php71`](#symfony_polyfill-php71) | **polyfill** | php |
 | [`symfony/polyfill-php72`](#symfony_polyfill-php72) | **polyfill** | php |
 | [`symfony/polyfill-php73`](#symfony_polyfill-php73) | **polyfill** | php |
+| [`symfony/polyfill-php74`](#symfony_polyfill-php74) | **polyfill** | php |
+| [`symfony/polyfill-php80`](#symfony_polyfill-php80) | **polyfill** | php |
 | [`tea/future`](#tea_future) | **polyfill** | php |
 | [`voku/portable-utf8`](#voku_portable-utf8) | **polyfill** | php, ext-iconv, ext-mbstring, ext-intl |
 | [`wizacha/new-relic-polyfill`](#wizacha_new-relic-polyfill) | _stub_ | ext-newrelic |
@@ -2251,6 +2253,44 @@ _None_
 
 **Constants:**
 _None_
+
+### <a id="symfony_polyfill-php74"></a>Polyfill `symfony/polyfill-php74` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-php74)
+**Type:** `polyfill`
+
+**Require:**
+  - `php`, version __5.3__
+
+**Replace:**
+  - `php`, version __7.4.*__
+
+**Functions:**
+  - `get_mangled_object_vars`
+  - `password_algos`
+  - `mb_str_split`
+
+**Classes:**
+_None_
+
+**Constants:**
+_None_
+
+### <a id="symfony_polyfill-php80"></a>Polyfill `symfony/polyfill-php80` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/symfony/polyfill-php80)
+**Type:** `polyfill`
+
+**Require:**
+  - `php`, version __7.0.8__
+
+**Replace:**
+  - `php`, version __8.0.*__
+
+**Functions:**
+  - `fdiv`
+
+**Classes:**
+  - `ValueError`
+
+**Constants:**
+  - `FILTER_VALIDATE_BOOL`
 
 ### <a id="tea_future"></a>Polyfill `tea/future` [<img src="https://packagist.org/apple-touch-icon.png" height="32" width="32"/>](https://packagist.org/packages/tea/future)
 **Type:** `polyfill`
