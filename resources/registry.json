@@ -2007,7 +2007,11 @@
       "mb_scrub"
     ],
     "classes": [],
-    "constants": []
+    "constants": [
+      "MB_CASE_UPPER",
+      "MB_CASE_LOWER",
+      "MB_CASE_TITLE"
+    ]
   },
   {
     "name": "symfony/polyfill-php54",
