@@ -2576,6 +2576,7 @@ _None_
   - `sqreen\auth_track`
   - `sqreen\signup_track`
   - `sqreen\identify`
+  - `sqreen\track`
 
 **Classes:**
 _None_

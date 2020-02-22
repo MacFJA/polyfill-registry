@@ -2368,7 +2368,8 @@
     "functions": [
       "sqreen\\auth_track",
       "sqreen\\signup_track",
-      "sqreen\\identify"
+      "sqreen\\identify",
+      "sqreen\\track"
     ],
     "classes": [],
     "constants": []
