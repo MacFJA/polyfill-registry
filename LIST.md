@@ -2587,7 +2587,7 @@ _None_
 **Type:** `polyfill`
 
 **Require:**
-  - `php`, version __7.0__
+  - `php`, version __7.0 || 7.1.1__
 
 **Replace:**
   - `ext-msgpack`, version __*__

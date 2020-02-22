@@ -2377,7 +2377,7 @@
     "name": "wyrihaximus/msgpack",
     "type": "polyfill",
     "require": {
-      "php": "7.0"
+      "php": "7.0 || 7.1.1"
     },
     "replace": {
       "ext-msgpack": "*"
