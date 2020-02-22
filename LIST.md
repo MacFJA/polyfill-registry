@@ -2327,6 +2327,9 @@ _None_
   - `sapi_windows_vt100_support`
   - `utf8_encode`
   - `utf8_decode`
+  - `mb_ord`
+  - `mb_chr`
+  - `mb_scrub`
 
 **Classes:**
 _None_
